@@ -20,6 +20,18 @@
     <div class="col-12">
         <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
     </div>
+    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
+    <script>
+        VANTA.HALO({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+        })
+    </script>
 </div>
 {% endblock %}
 
