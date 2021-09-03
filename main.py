@@ -35,18 +35,6 @@ def noah():
 def var():
     return render_template("noah.html")
 
-@app.route('/aryan/')
-def aryan():
-    return render_template("aryan.html")
-
-@app.route('/tanay/')
-def tanay():
-    return render_template("tanay.html")
-
-@app.route('/lucas/')
-def lucas():
-    return render_template("lucas.html")
-
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greet():
     # submit button has been pushed
