@@ -28,25 +28,34 @@ def hawkers():
 
 
 @app.route('/stub/')
-def tanay():
+def noah():
     return render_template("stub.html")
 
-@app.route('/tanay/')
+@app.route('/noah/')
 def var():
+    return render_template("noah.html")
+
+@app.route('/aryan/')
+def aryan():
+    return render_template("aryan.html")
+
+@app.route('/tanay/')
+def tanay():
     return render_template("tanay.html")
 
+@app.route('/lucas/')
+def lucas():
+    return render_template("lucas.html")
 
-@app.route('/greet', methods=['GET', 'POST'])
+@app.route('/greetNoah', methods=['GET', 'POST'])
 def greet():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("greetTanay.html", name=name)
+            return render_template("greetNoah.html", name=name)
     # starting and empty input default
-    return render_template("greetTanay.html", name="World")
+    return render_template("greetNoah.html", name="World")
 
-
-# runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True, port="5001")
