@@ -43,6 +43,11 @@ def tanay():
 def aryan():
     return render_template("aryan.html")
 
+@app.route('/lucas/')
+def lucas():
+    return render_template("lucas.html")
+
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed
@@ -72,6 +77,16 @@ def greetAryan():
             return render_template("greetAryan.html", name=name)
     # starting and empty input default
     return render_template("greetAryan.html", name="World")
+
+@app.route('/greetLucas', methods=['GET', 'POST'])
+def greetLucas():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("greetLucas.html", name=name)
+    # starting and empty input default
+    return render_template("greetLucas.html", name="World")
 
 if __name__ == "__main__":
     app.run(debug=True, port="5001")
