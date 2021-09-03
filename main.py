@@ -41,9 +41,9 @@ def greet():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("greetAryan.html", name=name)
+            return render_template("greet.html", name=name)
     # starting and empty input default
-    return render_template("greetAryan.html", name="World")
+    return render_template("greet.html", name="World")
 
 if __name__ == "__main__":
     app.run(debug=True)
