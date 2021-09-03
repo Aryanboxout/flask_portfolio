@@ -39,6 +39,10 @@ def var():
 def tanay():
     return render_template("tanay.html")
 
+@app.route('/aryan/')
+def aryan():
+    return render_template("aryan.html")
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed
@@ -59,5 +63,16 @@ def greetTanay():
     # starting and empty input default
     return render_template("greetTanay.html", name="World")
 
+@app.route('/greetAryan', methods=['GET', 'POST'])
+def greetAryan():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("greetAryan.html", name=name)
+    # starting and empty input default
+    return render_template("greetAryan.html", name="World")
+
 if __name__ == "__main__":
     app.run(debug=True, port="5001")
+
