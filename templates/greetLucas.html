@@ -20,6 +20,20 @@
         <div class="col-12">
             <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
         </div>
+        <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vanta.net.min.js') }}"></script>
+        <script>
+            VANTA.NET({
+                el: "body",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00
+            })
+        </script>
     </div>
 {% endblock %}
 
