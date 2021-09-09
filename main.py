@@ -47,6 +47,10 @@ def aryan():
 def lucas():
     return render_template("lucas.html")
 
+@app.route('/binary/')
+def binary():
+    return render_template("binary.html")
+
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
@@ -97,6 +101,8 @@ def greetPranav():
             return render_template("greetPranav.html", name=name)
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, port="5001")
