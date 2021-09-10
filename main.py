@@ -31,21 +31,9 @@ def hawkers():
 def noah():
     return render_template("stub.html")
 
-@app.route('/noah/')
-def var():
-    return render_template("noah.html")
-
-@app.route('/tanay/')
-def tanay():
-    return render_template("tanay.html")
-
-@app.route('/aryan/')
-def aryan():
-    return render_template("aryan.html")
-
-@app.route('/lucas/')
-def lucas():
-    return render_template("lucas.html")
+@app.route('/binary/')
+def binary():
+    return render_template("binary.html")
 
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
@@ -97,6 +85,8 @@ def greetPranav():
             return render_template("greetPranav.html", name=name)
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
+
+
 
 if __name__ == "__main__":
     app.run(debug=True, port="5001")
