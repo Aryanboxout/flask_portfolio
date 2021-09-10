@@ -1,40 +1,29 @@
-<!-- Extending the predefined project layout -->
-{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        .p1 {
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+    </style>
+    <title>HTML Elements Reference</title>
+</head>
+<body>
 
-<!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
-
-<!- This is a replacement block for Body in base.html -->
-{% block body %}
-    <div class="center-block" style="...">
-        <div class="col-12">
-            <p>Hello, {{name}}!</p>
-        </div>
-        <div class="col-12">
-            <form action="/greetPranav" id="greet" method="POST" >
-                <label for="name">Type a greeting name?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Greetings!">
-            </form>
-        </div>
-        <div class="col-12">
-            <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-        </div>
-        <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
-        <script>
-            VANTA.HALO({
-                el: "body",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00
-            })
-        </script>
-    </div>
-{% endblock %}
-
-<!- This is turning off birds background from base.html -->
-{% block background %}
-{% endblock %}
+<h1>Pranav About Me Page</h1>
+<p class="p1">Hello, my name is Pranav Parthasarathy. I am an 11th grader at Del Norte High School. I am curretnly in AP Computer Science Principles. I am an athlete who plays soccer and many other sports. My main passions are playing and watching sports, hanging out with my friends, working out, and traveling to many parts of the world. I have also lived in three different locations in my life. These locations are, Geneva, San Diego, and Milwaukee. </p>
+<img src="https://www.soccermaster.com/wp-content/uploads/2018/03/sc3147_101_nike_strike_ball_02-1.jpg" alt="Trulli" width="150" height="150">
+<h2> Geneva, Switzerland
+</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Geneve_2005_001_Ork.ch.jpg/1200px-Geneve_2005_001_Ork.ch.jpg" alt="Trulli" width="150" height="150">
+<h2> Milwaukee, Wisconsin
+</h2>
+<img src="https://assets.visitmilwaukee.org/visitmke/media/global/General%20Images/Gallery%20Size/VM-Milwaukee-Skyline-Drone-Discoveryworld.jpg?ext=.jpg&mode=crop&width=1200&height=600&scale=both&quality=80" alt="Trulli" width="150" height="150">
+<h2> San Diego, California
+</h2>
+<img src="https://www.outfrontmedia.com/-/media/images/ofm/markets/san-diego/san-diego-hero.jpg" alt="Trulli" width="150" height="150">
+</body>
+</html>
