@@ -31,22 +31,6 @@ def hawkers():
 def noah():
     return render_template("stub.html")
 
-@app.route('/noah/')
-def var():
-    return render_template("noah.html")
-
-@app.route('/tanay/')
-def tanay():
-    return render_template("tanay.html")
-
-@app.route('/aryan/')
-def aryan():
-    return render_template("aryan.html")
-
-@app.route('/lucas/')
-def lucas():
-    return render_template("lucas.html")
-
 @app.route('/binary/')
 def binary():
     return render_template("binary.html")

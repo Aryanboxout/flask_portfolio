@@ -20,6 +20,17 @@
     <div class="col-12">
         <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
     </div>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
     <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
     <script>
