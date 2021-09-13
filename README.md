@@ -10,12 +10,20 @@
 2.  [Project Ideation]
 : https://github.com/Aryanboxout/flask_portfolio/projects/1#card-67657601
 
+##TimeBox
+
+1.[Sprint Week 1-2]
+:
+
+2.[Sprint Week 3-4]
+:
+
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
 |:-----|:----------------------|:-----:|:-----------:|:-------:|
-| Tanay Rayavarapu | [@TANAY101405](https://github.com/TANAY101405) | [Tasks](https://github.com/Aryanboxout/flask_portfolio/issues/assigned/TANAY101405)|[Scrum Board]() | [Commits](https://github.com/Aryanboxout/flask_portfolio/commits?author=TANAY101405)|
+| Tanay Rayavarapu | [@TANAY101405](https://github.com/TANAY101405) | [Tasks](https://github.com/Aryanboxout/flask_portfolio/issues/assigned/TANAY101405)|[Scrum Board](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-68554855) | [Commits](https://github.com/Aryanboxout/flask_portfolio/commits?author=TANAY101405)|
 | Noah Jeng | [@NoahJ214](https://github.com/NoahJ214) | [Tasks](https://github.com/Aryanboxout/flask_portfolio/issues/assigned/NoahJ214)|[Scrum Board]()|[Commits](https://github.com/Aryanboxout/flask_portfolio/commits?author=NoahJ214)|
-| Aryan Shah| [@Aryanboxout](https://github.com/Aryanboxout) | [Tasks](https://github.com/Aryanboxout/flask_portfolio/issues/assigned/Aryanboxout)|[Scrum Board]()|[Commits](https://github.com/Aryanboxout/flask_portfolio/commits?author=aryanmshah)
+| Aryan Shah| [@Aryanmshah](https://github.com/aryanmshah) | [Tasks](https://github.com/Aryanboxout/flask_portfolio/issues/assigned/Aryanboxout)|[Scrum Board]()|[Commits](https://github.com/Aryanboxout/flask_portfolio/commits?author=aryanmshah)
 | Pranav Parthasarathy| [@PranavP04](https://github.com/PranavP04) | [Tasks](https://github.com/Aryanboxout/flask_portfolio/issues/assigned/PranavP04)|[Scrum Board]()|[Commits](https://github.com/Aryanboxout/flask_portfolio/commits?author=PranavP04)
 |Lucas Huang| [@lucashuang248](https://github.com/lucashuang248) | [Tasks](https://github.com/Aryanboxout/flask_portfolio/issues/assigned/lucashuang248)|[Scrum Board]()|[Commits]()
 
