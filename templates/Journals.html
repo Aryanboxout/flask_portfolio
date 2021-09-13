@@ -1,0 +1,17 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Stubby" %}
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here ->
+    <p>Noah, Tanay, and Lucas Journal https://docs.google.com/document/d/1CvHvZOLyqqTMqtluWOw3nmPxj_Qg2qotaP1fSXbHq6o/edit?usp=sharing</p>
+    <p>Aryan and Pranav Journal https://docs.google.com/document/d/1l3WlycUO6VHKoQe9tjeVpAOlvq5DGxXn6fUGvL4FwNI/edit?usp=sharing</p>
+{% endblock %}
+
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}

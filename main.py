@@ -22,6 +22,11 @@ def wireframes():
 def brainWrite():
     return render_template("brainWrite.html")
 
+@app.route('/Journals/')
+def Journals():
+    return render_template("Journals.html")
+
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed
