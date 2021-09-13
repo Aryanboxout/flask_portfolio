@@ -1,51 +1,6 @@
-<!-- Extending the predefined project layout -->
-{% extends "layouts/base.html" %}
+<h1>About Me Page: Tanay Rayavarapu</h1>
+<p class="p1">Hello, my name is Tanay Rayavarapu and I am one of the members of Team Cosmos in AP Computer Science. Outside of school, I am a black belt in Taekwondo and was a part of the Del Norte Swim Team in my freshman and sophomore years. I was born in Oceanside, California, and have lived in 4s Ranch my entire life. </p>
 
-<!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
+</body>
+</html>
 
-<!- This is a replacement block for Body in base.html -->
-{% block body %}
-<div class="center-block" style="...">
-    <div class="col-12">
-        <p>Hello, {{name}}!</p>
-    </div>
-    <div class="col-12">
-        <form action="/greetTanay" id="greet" method="POST" >
-            <label for="name">Type a greeting name?</label>
-            <input name="name" id="name">
-            <input type="submit" value="Greetings!">
-        </form>
-    </div>
-    <div class="col-12">
-        <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-    </div>
-    <label for="cars">Choose a car:</label>
-    <select name="cars" id="cars">
-        <optgroup label="Swedish Cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-        </optgroup>
-        <optgroup label="German Cars">
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </optgroup>
-    </select>
-    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vanta.halo.min.js') }}"></script>
-    <script>
-        VANTA.HALO({
-            el: "body",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00
-        })
-    </script>
-</div>
-{% endblock %}
-
-<!- This is turning off birds background from base.html -->
-{% block background %}
-{% endblock %}
