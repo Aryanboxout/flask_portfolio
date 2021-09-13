@@ -10,6 +10,11 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/minilabs/')
+def minilabs():
+    return render_template("minilabs.html")
+
+
 @app.route('/binary/')
 def binary():
     return render_template("binary.html")
