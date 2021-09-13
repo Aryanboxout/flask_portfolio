@@ -1,42 +1,103 @@
-<!-- Extending the predefined project layout -->
-{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-<!- This is a replacement block for Body in base.html -->
-{% block body %}
-    <div class="center-block" style="...">
-        <div class="col-12">
-            <p>Hello, {{name}}!</p>
-        </div>
-        <div class="col-12">
-            <form action="/greetAryan" id="greet" method="POST" >
-                <label for="name">Type a greeting name?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Greetings!">
-            </form>
-        </div>
-        <div class="col-12">
-            <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-        </div>
-        <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='vanta.rings.min.js') }}"></script>
-        <script>
-            VANTA.RINGS({
-                el: "body",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00
-            })
-        </script>
-    </div>
-{% endblock %}
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
 
-<!- This is turning off birds background from base.html -->
-{% block background %}
-{% endblock %}
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <h2>Aryans about</h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <h3>Links about me</h3>
+
+            <li><a href="https://dmcvsharks.com/">My soccer club</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <article>
+        <h1>About me</h1>
+        <p>I am 16 years old and a junior at Del norte high school. I like to play soccer and spend time withg my friends. Also, I am very interested in persuing computer programming</p>
+        <p>I am part of the n224 cosmos team in CSP at Del Norte</p>
+    </article>
+</section>
+
+<footer>
+    <p></p>
+</footer>
+
+</body>
+</html>
