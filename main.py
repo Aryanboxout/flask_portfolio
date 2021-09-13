@@ -14,6 +14,13 @@ def index():
 def binary():
     return render_template("binary.html")
 
+@app.route('/wireframes/')
+def wireframes():
+    return render_template("wireframes.html")
+
+@app.route('/brainWrite/')
+def brainWrite():
+    return render_template("brainWrite.html")
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
@@ -64,8 +71,6 @@ def greetPranav():
             return render_template("greetPranav.html", name=name)
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
-
-
 
 if __name__ == "__main__":
     app.run(debug=True, port="5001")
