@@ -1,42 +1,106 @@
-<!-- Extending the predefined project layout -->
-{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-<!- This is a replacement block for Body in base.html -->
-{% block body %}
-    <div class="center-block" style="...">
-        <div class="col-12">
-            <p>Hello, {{name}}!</p>
-        </div>
-        <div class="col-12">
-            <form action="/greetAryan" id="greet" method="POST" >
-                <label for="name">Type a greeting name?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Greetings!">
-            </form>
-        </div>
-        <div class="col-12">
-            <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-        </div>
-        <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='vanta.rings.min.js') }}"></script>
-        <script>
-            VANTA.RINGS({
-                el: "body",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00
-            })
-        </script>
-    </div>
-{% endblock %}
+        /* Style the header */
 
-<!- This is turning off birds background from base.html -->
-{% block background %}
-{% endblock %}
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <h2>Aryans about</h2>
+    <img src="data:image/jpeg;base64,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" alt="Trulli" width="300" height="233">
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <h3>Links about me</h3>
+
+            <li><a href="https://dmcvsharks.com/">My soccer club</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Dave_(rapper)">My Favorite music artist</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <article>
+        <h1>About me</h1>
+        <p>I am 16 years old and a junior at Del norte high school. I like to play soccer and spend time withg my friends. I am interested in cryptocurrency and I want to work with something regarding blockchain technology as I feel it is revalutionary, and can fix many of the world's socioeconomic issues. Also, I am very interested in persuing computer programming. </p>
+        <p>I am part of the n224 cosmos team in CSP at Del Norte</p>
+    </article>
+</section>
+
+<footer>
+    <p></p>
+</footer>
+
+</body>
+</html>
