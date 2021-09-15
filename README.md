@@ -1,22 +1,22 @@
 # AP CSP Period 4: Team Cosmos
-## [Scrum Board]: https://github.com/Aryanboxout/flask_portfolio/projects/1
-## [Insights with Contributors and Commits]: https://github.com/Aryanboxout/flask_portfolio/commits/main
+## [Scrum Board](https://github.com/Aryanboxout/flask_portfolio/projects/1)
+## [Insights with Contributors and Commits](https://github.com/Aryanboxout/flask_portfolio/commits/main)
 
 
 ## Table of Contents
-1. [Github Repository Contributors]
-: https://github.com/Aryanboxout/flask_portfolio/graphs/contributors
+1. [Github Repository Contributors](https://github.com/Aryanboxout/flask_portfolio/graphs/contributors)
 
-2.  [Project Ideation]
-: https://github.com/Aryanboxout/flask_portfolio/projects/1#card-67657601
+2.  [Project Ideation](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-67657601)
 
 ## TimeBox
 
-1.[Sprint Week 1-2]
-:
+1. [Sprint 1 Week 0](https://docs.google.com/presentation/d/15a6W0xT3Q5guYOhvFp2psy7HwG_v5IHcOASry7rTYC4/edit?usp=sharing)
 
-2.[Sprint Week 3-4]
-:
+2.[Sprint 2 Week 1-2](https://docs.google.com/document/d/1Fs0GWqr5NYese6IDEQ2x8bs4fGg1eBbcgB7Ff2Qjzaw/edit?usp=sharing)
+
+3.[Sprint 3 Week 3-4](https://docs.google.com/presentation/d/1gIPmceTitbLRQ9le7bxaiDneoatgrLCcdpymOjZlBao/edit?usp=sharing)
+
+3.[Sprint 4 Week 3-4]
 
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
