@@ -32,3 +32,4 @@
 ### [Aryan Shah and Pranav Parthasarathy Journal](https://docs.google.com/document/d/1RFJ-hulllJiRWEQzIPpENySnNEeANAaXiV8GFPLNm-0/edit?usp=sharing)
 ## Project Ideation
 ### Website-Themed Idea: Space-themed design for our website because we are Team Cosmos.
+1. [Wireframe Design on Google Drawing](https://docs.google.com/drawings/d/1dX3vo62J3N8Sa8rjW3ylMC8kL9gkTF3GYgMShyklWDE/edit?usp=sharing)
