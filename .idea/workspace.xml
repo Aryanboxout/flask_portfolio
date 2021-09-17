@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3418edde-d218-4987-9e87-141d94190a0a" name="Changes" comment="Lucas commit and push">
+    <list default="true" id="3418edde-d218-4987-9e87-141d94190a0a" name="Changes" comment="Tanay Binary Page Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/binary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/minilabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/minilabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/greetTanay.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetTanay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/minilabs.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631722421758</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tanay Binary Page Changes">
+      <created>1631821639131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631821639132</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hi" />
     <MESSAGE value="Updated Journal Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Journal Pages" />
+    <MESSAGE value="Tanay Binary Page Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tanay Binary Page Changes" />
   </component>
 </project>
