@@ -24,7 +24,7 @@ def wireframes():
     return render_template("wireframes.html")
 
 @app.route('/brainWrite/')
-def brainWrite():
+def brainwrite():
     return render_template("brainWrite.html")
 
 @app.route('/NoahTanayLucasJournal/')
