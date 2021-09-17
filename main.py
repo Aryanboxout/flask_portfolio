@@ -23,8 +23,12 @@ def binary():
 def wireframes():
     return render_template("wireframes.html")
 
+@app.route('/sprint/')
+def sprint():
+    return render_template("sprint.html")
+
 @app.route('/brainWrite/')
-def brainWrite():
+def brainwrite():
     return render_template("brainWrite.html")
 
 @app.route('/NoahTanayLucasJournal/')
