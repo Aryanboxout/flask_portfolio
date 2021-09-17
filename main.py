@@ -10,6 +10,11 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/minilabs/')
+def minilabs():
+    return render_template("minilabs.html")
+
+
 @app.route('/binary/')
 def binary():
     return render_template("binary.html")
@@ -22,9 +27,13 @@ def wireframes():
 def brainWrite():
     return render_template("brainWrite.html")
 
-@app.route('/Journals/')
-def Journals():
-    return render_template("Journals.html")
+@app.route('/NoahTanayLucasJournal/')
+def NoahTanayLucasJournal():
+    return render_template("NoahTanayLucasJournal.html")
+
+@app.route('/AryanPranavJournal/')
+def AryanPranavJournal():
+    return render_template("AryanPranavJournal.html")
 
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
