@@ -18,14 +18,6 @@
 
 3.[Sprint 4 Week 3-4]
 
-##TimeBox
-
-1.[Sprint Week 1-2]
-:
-
-2.[Sprint Week 3-4]
-:
-
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
 |:-----|:----------------------|:-----:|:-----------:|:-------:|
