@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Pranav About Me Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             background-color: lightblue;
@@ -8,22 +11,65 @@
         .p1 {
             font-family: "Lucida Console", "Courier New", monospace;
         }
+
+        /* Style the side navigation */
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+        }
+
+
+        /* Side navigation links */
+        .sidenav a {
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color on hover */
+        .sidenav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the content */
+        .content {
+            margin-left: 200px;
+            padding-left: 20px;
+        }
     </style>
-    <title>HTML Elements Reference</title>
 </head>
 <body>
 
-<h1>Pranav About Me Page</h1>
-<p class="p1">Hello, my name is Pranav Parthasarathy. I am an 11th grader at Del Norte High School. I am curretnly in AP Computer Science Principles. I am an athlete who plays soccer and many other sports. My main passions are playing and watching sports, hanging out with my friends, working out, and traveling to many parts of the world. I have also lived in three different locations in my life. These locations are, Geneva, San Diego, and Milwaukee. </p>
-<img src="https://www.soccermaster.com/wp-content/uploads/2018/03/sc3147_101_nike_strike_ball_02-1.jpg" alt="Trulli" width="150" height="150">
-<h2> Geneva, Switzerland
-</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Geneve_2005_001_Ork.ch.jpg/1200px-Geneve_2005_001_Ork.ch.jpg" alt="Trulli" width="150" height="150">
-<h2> Milwaukee, Wisconsin
-</h2>
-<img src="https://assets.visitmilwaukee.org/visitmke/media/global/General%20Images/Gallery%20Size/VM-Milwaukee-Skyline-Drone-Discoveryworld.jpg?ext=.jpg&mode=crop&width=1200&height=600&scale=both&quality=80" alt="Trulli" width="150" height="150">
-<h2> San Diego, California
-</h2>
-<img src="https://www.outfrontmedia.com/-/media/images/ofm/markets/san-diego/san-diego-hero.jpg" alt="Trulli" width="150" height="150">
+<div class="sidenav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+</div>
+
+<div class="content">
+    <h1>Pranav About Me Page</h1>
+    <p>Hello, my name is Pranav Parthasarathy. I am an 11th grader at Del Norte High School. I am curretnly in AP Computer Science Principles. I am an athlete who plays soccer and many other sports. My main passions are playing and watching sports, hanging out with my friends, working out, and traveling to many parts of the world. I have also lived in three different locations in my life. These locations are, Geneva, San Diego, and Milwaukee.</p>
+    <img src="https://www.soccermaster.com/wp-content/uploads/2018/03/sc3147_101_nike_strike_ball_02-1.jpg" alt="Trulli" width="150" height="150">
+    <h2> Geneva, Switzerland
+    </h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Geneve_2005_001_Ork.ch.jpg/1200px-Geneve_2005_001_Ork.ch.jpg" alt="Trulli" width="150" height="150">
+    <h2> Milwaukee, Wisconsin
+    </h2>
+    <img src="https://assets.visitmilwaukee.org/visitmke/media/global/General%20Images/Gallery%20Size/VM-Milwaukee-Skyline-Drone-Discoveryworld.jpg?ext=.jpg&mode=crop&width=1200&height=600&scale=both&quality=80" alt="Trulli" width="150" height="150">
+    <h2> San Diego, California
+    </h2>
+    <img src="https://www.outfrontmedia.com/-/media/images/ofm/markets/san-diego/san-diego-hero.jpg" alt="Trulli" width="150" height="150">
+</body>
+</html>
+</div>
+
 </body>
 </html>
