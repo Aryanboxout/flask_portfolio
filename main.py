@@ -14,11 +14,6 @@ def index():
 def minilabs():
     return render_template("minilabs.html")
 
-
-@app.route('/binary/')
-def binary():
-    return render_template("binary.html")
-
 @app.route('/wireframes/')
 def wireframes():
     return render_template("wireframes.html")
@@ -39,6 +34,9 @@ def NoahTanayLucasJournal():
 def AryanPranavJournal():
     return render_template("AryanPranavJournal.html")
 
+@app.route('/binary/')
+def binary():
+    return render_template("binary.html")
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
