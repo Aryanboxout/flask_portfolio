@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Aryan Html page update">
-      <change afterPath="$PROJECT_DIR$/image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/lassen-volcano-256.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/rgbTanay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/binary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/greetTanay.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetTanay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wireframes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wireframes.html" afterDir="false" />
-    </list>
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Tanay RGB Page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632076980690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Tanay RGB Page">
+      <created>1632339140090</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632339140090</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +197,7 @@
     <MESSAGE value="Youtube Embed commit and push" />
     <MESSAGE value="Base project commit and push" />
     <MESSAGE value="Aryan Html page update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aryan Html page update" />
+    <MESSAGE value="Tanay RGB Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tanay RGB Page" />
   </component>
 </project>
