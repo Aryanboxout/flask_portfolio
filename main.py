@@ -38,6 +38,10 @@ def AryanPranavJournal():
 def binary():
     return render_template("binary.html")
 
+@app.route('/rgbTanay/')
+def rgbTanay():
+    return render_template("rgbTanay.html")
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed
