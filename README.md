@@ -35,6 +35,7 @@
 | Name | Weekly Requirements | Tangibles (Journals) | Grade | RGB Commits |
 |:-----|:--------------------|:--------------------:|:-----:|:---------:|
 | Tanay Rayavarapu | Journal Notes and Quiz on 3.1 and 3.2 Lessons for Collegeboard | [Journal for Tanay Rayavarapu, Noah Jeng, Lucas Huang](https://docs.google.com/document/d/1CvHvZOLyqqTMqtluWOw3nmPxj_Qg2qotaP1fSXbHq6o/edit?usp=sharing)
+| Noah Jeng | Journal Notes and Quiz on 3.1 and 3.2 Lessons for Collegeboard | [Journal for Tanay Rayavarapu, Noah Jeng, Lucas Huang](https://docs.google.com/document/d/1CvHvZOLyqqTMqtluWOw3nmPxj_Qg2qotaP1fSXbHq6o/edit?usp=sharing)
 
 
 ## Contributors
