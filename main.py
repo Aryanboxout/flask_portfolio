@@ -1,6 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
-
+from image import image_data
 # create a Flask instance
 app = Flask(__name__)
 
@@ -38,9 +38,9 @@ def AryanPranavJournal():
 def binary():
     return render_template("binary.html")
 
-@app.route('/rgbTanay/')
-def rgbTanay():
-    return render_template("rgbTanay.html")
+@app.route('/rgbNoah/')
+def rgbNoah():
+    return render_template("rgbNoah.html", images=image_data())
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
