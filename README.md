@@ -1,22 +1,41 @@
 # AP CSP Period 4: Team Cosmos
 ## [Scrum Board](https://github.com/Aryanboxout/flask_portfolio/projects/1)
-## [Insights with Contributors and Commits](https://github.com/Aryanboxout/flask_portfolio/commits/main)
+## [Insights with Contributors and Commits](https://github.com/Aryanboxout/flask_portfolio/graphs/contributors)
 
 
 ## Table of Contents
-1. [Github Repository Contributors](https://github.com/Aryanboxout/flask_portfolio/graphs/contributors)
+
+1. Sprints Per Week
 
 2.  [Project Ideation](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-67657601)
 
-## TimeBox
+3. [Github Repository Contributors](https://github.com/Aryanboxout/flask_portfolio/commits/main)
 
-1. [Sprint 1 Week 0](https://docs.google.com/presentation/d/15a6W0xT3Q5guYOhvFp2psy7HwG_v5IHcOASry7rTYC4/edit?usp=sharing)
+## Sprint 1 Week 1
+1.[Link to Week 0 Presentation](https://docs.google.com/presentation/d/15a6W0xT3Q5guYOhvFp2psy7HwG_v5IHcOASry7rTYC4/edit?usp=sharing)
 
-2.[Sprint 2 Week 1-2](https://docs.google.com/document/d/1Fs0GWqr5NYese6IDEQ2x8bs4fGg1eBbcgB7Ff2Qjzaw/edit?usp=sharing)
 
-3.[Sprint 3 Week 3-4](https://docs.google.com/presentation/d/1gIPmceTitbLRQ9le7bxaiDneoatgrLCcdpymOjZlBao/edit?usp=sharing)
 
-3.[Sprint 4 Week 3-4](https://www.youtube.com/watch?v=VJkSWSw-VBY)
+## Sprint 2 Week 2
+
+1.[Link to Sprint 2 PBL 1-2 Assignment](https://docs.google.com/document/d/1Fs0GWqr5NYese6IDEQ2x8bs4fGg1eBbcgB7Ff2Qjzaw/edit?usp=sharing)
+
+
+## Sprint 3-4 Week 3
+1.[Link to Slide Presentation](https://docs.google.com/presentation/d/1gIPmceTitbLRQ9le7bxaiDneoatgrLCcdpymOjZlBao/edit?usp=sharing)
+
+2.[Wireframe Space Design](https://docs.google.com/drawings/d/1dX3vo62J3N8Sa8rjW3ylMC8kL9gkTF3GYgMShyklWDE/edit?usp=sharing)
+
+3.[Bootstrap Grids from W3Schools](https://getbootstrap.com/docs/4.0/layout/grid/)
+
+## Sprint 3-4 Week 4
+1.[YouTube Video for Sprint 4](https://www.youtube.com/watch?v=VJkSWSw-VBY)
+
+# Sprint 5-6 Week 5
+| Name | Weekly Requirements | Tangibles (Journals) | Grade | RGB Commits |
+|:-----|:--------------------|:--------------------:|:-----:|:---------:|
+| Tanay Rayavarapu | Journal Notes and Quiz on 3.1 and 3.2 Lessons for Collegeboard | [Journal for Tanay Rayavarapu, Noah Jeng, Lucas Huang](https://docs.google.com/document/d/1CvHvZOLyqqTMqtluWOw3nmPxj_Qg2qotaP1fSXbHq6o/edit?usp=sharing)
+
 
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
