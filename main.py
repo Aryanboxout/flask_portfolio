@@ -2,6 +2,8 @@
 from flask import Flask, render_template, request
 
 # create a Flask instance
+from image import image_data
+
 app = Flask(__name__)
 
 
@@ -13,6 +15,11 @@ def index():
 @app.route('/minilabs/')
 def minilabs():
     return render_template("minilabs.html")
+
+@app.route('/aryanRGB/')
+def aryanRGB():
+    return render_template("aryanRGB.html", images=image_data())
+
 
 @app.route('/wireframes/')
 def wireframes():
