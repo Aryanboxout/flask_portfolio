@@ -40,6 +40,16 @@
 | Pranav Parthasarathy | Journal Notes and Quiz on 3.1 and 3.2 Lessons for Collegeboard | [Journal for Pranav Parthasarathy and Aryan Shah](https://docs.google.com/document/d/1RFJ-hulllJiRWEQzIPpENySnNEeANAaXiV8GFPLNm-0/edit?usp=sharing)| 3/3 | [Aryan Commits](https://github.com/Aryanboxout/flask_portfolio/commits?author=Aryanboxout)
 | Lucas Huang | Journal Notes and Quiz on 3.1 and 3.2 Lessons for Collegeboard | [Journal for Tanay Rayavarapu, Noah Jeng, Lucas Huang](https://docs.google.com/document/d/1CvHvZOLyqqTMqtluWOw3nmPxj_Qg2qotaP1fSXbHq6o/edit?usp=sharing)| 3/3 | [Lucas Commits]()
 
+# Sprint 5-6 Week 6
+| Week Tasks | Tangibles (Links to RGB)| Assigned to: | Individual Grades
+|:-----|:--------------------| :--------------------|:--------------------|
+| RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in rgb.html. | | | 
+| RGB Values with an Image, Backend... how would you write a message on top of image (Links to an external site.) and transport it to the Web?  | | | 
+| RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating imagesRGB Values with an Image.  Make journal entries and do corrections in code. Use Big O Notation to make code more efficient when doing calculations | | | 
+| Research/Study sheet/journal.  Make journal entries and cite examples from code.  what is base2 (Links to an external site.), base8, base16.  what is base64  | | | 
+| Documentation.   Make a document and cite examples from code describing your project layout. | | | 
+
+
 
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
