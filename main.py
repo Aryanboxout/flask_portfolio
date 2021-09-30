@@ -41,9 +41,12 @@ def NoahTanayLucasJournal():
 def AryanPranavJournal():
     return render_template("AryanPranavJournal.html")
 
-@app.route('/binary/')
+@app.route('/binary/',methods=['GET','POST'])
 def binary():
-    return render_template("binary.html")
+    BITS=6
+    if request.method == 'POST':
+        BITS = int(request.form['BITS'])
+    return render_template("binary.html",BITS=BITS)
 
 @app.route('/rgbTanay/')
 def rgbTanay():
@@ -100,5 +103,5 @@ def greetPranav():
     return render_template("greetPranav.html", name="World")
 
 if __name__ == "__main__":
-    app.run(debug=True, port="5001")
+    app.run(debug=True)
 
