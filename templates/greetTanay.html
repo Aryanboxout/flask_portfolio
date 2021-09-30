@@ -1,32 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>.p1 {
-        font-family: "Brush Script MT", cursive;
-    }
 
-    body {
-        color: blue;
-    }
 
-    body {
-        background-color: yellow;
-    }
-    </style>
-    <title>HTML Elements Reference</title>
-</head>
-<body>
+!-- Extending the project layout, as this file will do minor customizations -->
+{% extends "layouts/base.html" %}
 
-<h1>About Me</h1>
-<p class="p1">Hello, my name is Tanay Rayavarapu and I am one of the members of Team Cosmos in AP Computer Science. Outside of school, I am a black belt in Taekwondo and was a part of the Del Norte Swim Team in my freshman and sophomore years. I was born in Oceanside, California, and have lived in 4s Ranch my entire life.  </p>
+<!-- Setting up variables to customize "project" details to be specific to walruses -->
+{% set project = "Tanay's" %}
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3xzCu8_TbzVjLHFi1CAKDmWU8ibzsAl8lw&usqp=CAU" alt="Trulli" width="600" height="300">
+{%  block body %}
+<body style="background-image: url('/static/assets/SoccerStadium.jpeg'); background-size: 100%">
+<div style="color: white; font-family: 'Brush Script MT'; font-size: larger; margin: 2% 10% 0 10%; text-align: center; background-color: rgba(255,0,0,0.5)">
 
-<audio controls>
-    <source src="horse.ogg" type="audio/ogg">
-    <source src="horse.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+    <div>
+        <form action="/Tanay/" id="Tanay" method="POST" >
+            <div>
+                <label for="name" style="padding-top: 4%">Hi, what is your name? </label>
+            </div>
+            <div style="padding: 0 0 1% 0">
+                <input name="name" id="name">
+                <input type="Submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div style="margin: 2% 0 0 0">
+        Hello, {{ Everyone }}, I hope you are having a wonderful day!
+    </div>
+
+    <img src="/static/assets/Tanay.jpeg" style="height: 400px; margin: 10%; border: 7px solid white;" alt="Photo of Tanay">
+
+    <p style="padding: 10%">
+        Hello, my name is Tanay Rayavarapu and I am one of the members of Team Cosmos in AP Computer Science. Outside of school, I am a black belt in Taekwondo and was a part of the Del Norte Swim Team in my freshman and sophomore years. I was born in Oceanside, California, and have lived in 4s Ranch my entire life.
+    </p>
+    <div>
+        </form>
+    </div>
 
 </body>
-</html>
+{% endblock %}
+{% block background %}
+{% endblock %}
+
+

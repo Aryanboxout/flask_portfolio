@@ -52,6 +52,10 @@ def binary():
 def rgbTanay():
     return render_template("rgbTanay.html")
 
+@app.route('/main/')
+def main():
+    return render_template("main.html")
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed
