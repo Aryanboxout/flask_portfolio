@@ -16,9 +16,9 @@ def index():
 def minilabs():
     return render_template("minilabs.html")
 
-@app.route('/aryanRGB/')
-def aryanRGB():
-    return render_template("aryanRGB.html", images=image_data())
+@app.route('/rgbNoah/')
+def rgbNoah():
+    return render_template("rgbNoah.html", images=image_data())
 
 
 @app.route('/wireframes/')
@@ -48,9 +48,13 @@ def binary():
         BITS = int(request.form['BITS'])
     return render_template("binary.html",BITS=BITS)
 
-@app.route('/rgbTanay/')
+@app.route('/rgbNoah/')
 def rgbTanay():
-    return render_template("rgbTanay.html")
+    return render_template("rgbNoah.html", images=image_data())
+
+@app.route('/main/')
+def main():
+    return render_template("main.html")
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():

@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw
+from PIL import Image, ImageFilter
 import numpy
 import base64
 from io import BytesIO
@@ -28,6 +29,14 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         file = path + img_dict['file']  # file with path for local access (backend)
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
+        img_reference.show()
+        d1 = ImageDraw.Draw(img_reference)
+        d1.text((0, 0), "This is Team Cosmos!", fill=(300, 0, 0))
+        blurImage = img_reference.filter(ImageFilter.BLUR)
+        blurImage.show()
+
+
+
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
@@ -89,7 +98,7 @@ if __name__ == "__main__":
         print(row['base64'])
         # display image
         print("----  render and write in image  -----")
-        filename = local_path + row['lassen-volcano-256.jpeg']
+        filename = local_path + row['lassen-volcano-256.jpg']
         image_ref = Image.open(filename)
         draw = ImageDraw.Draw(image_ref)
         draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
