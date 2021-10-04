@@ -48,9 +48,9 @@ def binary():
         BITS = int(request.form['BITS'])
     return render_template("binary.html",BITS=BITS)
 
-@app.route('/rgbTanay/')
+@app.route('/rgbNoah/')
 def rgbTanay():
-    return render_template("rgbTanay.html")
+    return render_template("rgbNoah.html", images=image_data())
 
 @app.route('/main/')
 def main():
