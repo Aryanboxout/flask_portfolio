@@ -16,9 +16,9 @@ def index():
 def minilabs():
     return render_template("minilabs.html")
 
-@app.route('/aryanRGB/')
-def aryanRGB():
-    return render_template("aryanRGB.html", images=image_data())
+@app.route('/rgbNoah/')
+def rgbNoah():
+    return render_template("rgbNoah.html", images=image_data())
 
 
 @app.route('/wireframes/')
