@@ -43,11 +43,12 @@
 # Sprint 5-6 Week 6
 | Week Tasks | Tangibles (Links to RGB)| Assigned to: | Individual Grades
 |:-----|:--------------------| :--------------------|:--------------------|
-| RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in rgb.html. | | | 
-| RGB Values with an Image, Backend... how would you write a message on top of image (Links to an external site.) and transport it to the Web?  | | | 
-| RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating imagesRGB Values with an Image.  Make journal entries and do corrections in code. Use Big O Notation to make code more efficient when doing calculations | | | 
-| Research/Study sheet/journal.  Make journal entries and cite examples from code.  what is base2 (Links to an external site.), base8, base16.  what is base64  | | | 
-| Documentation.   Make a document and cite examples from code describing your project layout. | | | 
+| RGB Values with an Image, Frontend... how would you change to grey scale dynamically?  Look for Hack in rgb.html. | [Gray Scale](https://github.com/Aryanboxout/flask_portfolio/commit/1dd6b03dbf35318b8a91aa96d0dff87477d7ed13) | Noah Jeng | 1/1| 
+| RGB Values with an Image, Backend... how would you write a message on top of image (Links to an external site.) and transport it to the Web?  |[Writing Image](https://github.com/Aryanboxout/flask_portfolio/commit/1dd6b03dbf35318b8a91aa96d0dff87477d7ed13) | Noah Jeng and Tanay Rayavarapu| 1/1| 
+| RGB Values with an Image, New Development.  explore and implement a new possibility in manipulating imagesRGB Values with an Image.  Make journal entries and do corrections in code. Use Big O Notation to make code more efficient when doing calculations | [Blurring Image](https://github.com/Aryanboxout/flask_portfolio/commit/ccb73ab58490195307af0150f9831ced302e47e8) | Tanay Rayavarapu | 1/1| 
+|RGB Values with an Image.  Make journal entries and do corrections in code.   Backend... image files are really big, this would make a Programmer consider being efficiency in programming.  What are the calculations?  Could the image.py function "def image_data" more efficient?  There is a science to writing efficient algorithms called Big O notation (Links to an external site.). Write image_data function to be more efficient according to Big O notation.  Basically, you are looking to remove a loop.| [Big O Notation Notes](https://docs.google.com/document/d/1RFJ-hulllJiRWEQzIPpENySnNEeANAaXiV8GFPLNm-0/edit?usp=sharing)| Aryan Shah and Lucas Huang |1/1|
+| Research/Study sheet/journal.  Make journal entries and cite examples from code.  what is base2 (Links to an external site.), base8, base16.  what is base64  | [Research Journal](https://docs.google.com/document/d/1bMhu-5P5k-HYcOK1mHtl33yBxBJBIwFXypRC177xlZo/edit?usp=sharing) | Pranav Parthasarathy | 1/1 | 
+| Documentation.   Make a document and cite examples from code describing your project layout. | [Documentation](https://docs.google.com/document/d/1WTEVYVat-CqvVvzyiq8PVoCoh5PSDS9OnoY6thXLpuI/edit?usp=sharing) | Noah Jeng | 1/1| 
 
 
 
