@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Lucas commit and push">
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Tanay Logic Gates File and RGB Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rgbNoah.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rgbNoah.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/binary.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +174,35 @@
       <option name="project" value="LOCAL" />
       <updated>1632076980690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Tanay Blurring Image">
+      <created>1633376343219</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633376343219</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Tanay Logic Gate Lab File">
+      <created>1633378259633</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1633378259633</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Tanay RGB Images Updated">
+      <created>1633465427153</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1633465427153</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tanay Logic Gates File and RGB Updated">
+      <created>1633468035900</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633468035900</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +227,10 @@
     <MESSAGE value="Youtube Embed commit and push" />
     <MESSAGE value="Base project commit and push" />
     <MESSAGE value="Aryan Html page update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aryan Html page update" />
+    <MESSAGE value="Tanay Blurring Image" />
+    <MESSAGE value="Tanay Logic Gate Lab File" />
+    <MESSAGE value="Tanay RGB Images Updated" />
+    <MESSAGE value="Tanay Logic Gates File and RGB Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tanay Logic Gates File and RGB Updated" />
   </component>
 </project>

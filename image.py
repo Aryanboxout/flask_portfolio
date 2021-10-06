@@ -34,6 +34,10 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         d1.text((0, 0), "This is Team Cosmos!", fill=(300, 0, 0))
         blurImage = img_reference.filter(ImageFilter.BLUR)
         blurImage.show()
+        hori_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
+        hori_flippedImage.show()
+        vert_flippedImage = img_reference.transpose(Image.FLIP_TOP_BOTTOM)
+        vert_flippedImage.show()
 
 
 
