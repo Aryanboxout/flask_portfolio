@@ -56,6 +56,10 @@ def Binarycolor():
 def rgbTanay():
     return render_template("rgbNoah.html", images=image_data())
 
+@app.route('/LogicGate/')
+def LogicGate():
+    return render_template("LogicGate.html", BITS=8)
+
 @app.route('/main/')
 def main():
     return render_template("main.html")
