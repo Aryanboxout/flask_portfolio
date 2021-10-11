@@ -1,15 +1,134 @@
+{% block body %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
-    function dec2bin(dec){
-    return (dec >>> 0).toString(2);
+<h2>Inputs</h2>
+<form action=“javascript:void(0);” onsubmit=“updateResults()“>
+    <input type=“checkbox” id=“inputA” name=“inputA” value=“0">
+    <label for=“inputA”> A</label>
+    <input type=“checkbox” id=“inputB” name=“inputB” value=“0”>
+    <label for=“inputB”> B</label>
+    <input type=“submit” value=“Submit”>
+</form>
+<html>
+<style>
+    table, th, td {
+        border:1px solid black;
     }
-
-</head>
+</style>
 <body>
-
+<h2>Logic Gates</h2>
+<table style=“width:100%“>
+    <tr>
+        <th>Symbol</th>
+        <th>Logic Gate</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td><img src=“/static/Images/and-operator.png”/></td>
+        <td>And Gate</td>
+        <td><div><p id=“andResultDiv”/></div></td>
+    </tr>
+    <tr>
+        <td><img src=“/static/Images/Nand-operator.png”/></td>
+        <td>Nand Gate</td>
+        <td><div><p id=“nandResultDiv”/></div></td>
+    </tr>
+    <tr>
+        <td><img src=“/static/Images/Or-operator.png”/></td>
+        <td>Or Gate</td>
+        <td><div><p id=“orResultDiv”/></div></td>
+    </tr>
+    <tr>
+        <td><img src=“/static/Images/Nor-operator.png”/></td>
+        <td>Nor Gate</td>
+        <td><div><p id=“norResultDiv”/></div></td>
+    </tr>
+    <tr>
+        <td><img src=“/static/Images/Xor-operator.png”/></td>
+        <td>Xor Gate</td>
+        <td><div><p id=“xorResultDiv”/></div></td>
+    </tr>
+</table>
 </body>
 </html>
+<!-- Created outer hidden div. Deleted to see logic lab example. -->
+<div hidden>
+    <div class=“center”>
+        <h1>Binary Logic Lab</h1>
+    </div>
+    <div class=“center”>
+        <p>Toggle each of the buttons (0s and 1s, NOTs, and operator) to see how it affects the final result!</p>
+    </div>  <!-- there’s no way this is the proper way to style this.... w/e -->
+    <div class=“row”>
+        <div class=“offset-sm-3 col-sm-1">   <!-- Two buttons to show 0 and 1 -->
+        <button class=“buttonFalse” id=“buttonOne” onclick=“toggleBool(‘buttonOne’)“>0</button>
+        <div class=“verticalLine” style=“height: 10em”></div>
+    </div>
+    <div class=“offset-sm-5 col-sm-1”>
+        <button class=“buttonFalse” id=“buttonTwo” onclick=“toggleBool(‘buttonTwo’)“>0</button>
+        <div class=“verticalLine” style=“height: 10em”></div>
+    </div>
+</div>
+<div class=“row”>
+    <div class=“offset-sm-3 col-sm-1">  <!-- NOT buttons that can be toggled; shows inverter -->
+    <p id=“not1” onclick=“toggleNot(‘not1’)“>NOT</p>
+</div>
+<div class=“col-sm-5 horizontalLine”></div>  <!-- Horizontal line in action -->
+<div class=“col-sm-1">
+    <p id=“not2” onclick=“toggleNot(‘not2’)“>NOT</p>
+</div>
+</div>
+<div class=“center”>
+    <div class=“verticalLine” style=“height: 4em; transform: translateY(-2em)“></div>
+</div>
+<div class=“center” style=“transform: translate(0.5em, -1.5em)“>  <!-- Clickable text that can change the operator used -->
+    <p id=“operator” onclick=“nextOp()“>AND</p>
+</div>
+<div class=“center”>
+    <div class=“verticalLine” style=“height: 4em; transform: translateY(-2em)“></div>
+</div>
+<div class=“center” style=“transform: translate(0.5em, -1.5em)“>
+    <p id=“result”>true</p>
+</div>
+</div> <!-- This is the outer hidden div. -->
+<script>
+    /* This function updates logic gate table. */
+    function updateResults() {
+        let bool1 = document.getElementById(“inputA”).checked;
+        let bool2 = document.getElementById(“inputB”).checked;
+        let andResult = bool1 && bool2;
+        let nandResult = !(bool1 && bool2);
+        let orResult = bool1 || bool2;
+        let norResult = !(bool1 || bool2);
+        let xorResult = bool1 != bool2;
+        if (andResult) {
+            document.getElementById(“andResultDiv”).innerHTML = “1”;
+        } else {
+            document.getElementById(“andResultDiv”).innerHTML = “0”;
+        }
+        if (nandResult) {
+            document.getElementById(“nandResultDiv”).innerHTML = “1”;
+        } else {
+            document.getElementById(“nandResultDiv”).innerHTML = “0”;
+        }
+        if (orResult) {
+            document.getElementById(“orResultDiv”).innerHTML = “1”;
+        } else {
+            document.getElementById(“orResultDiv”).innerHTML = “0”;
+        }
+        if (norResult) {
+            document.getElementById(“norResultDiv”).innerHTML = “1”;
+        } else {
+            document.getElementById(“norResultDiv”).innerHTML = “0”;
+        }
+        if (xorResult) {
+            document.getElementById(“xorResultDiv”).innerHTML = “1”;
+        } else {
+            document.getElementById(“xorResultDiv”).innerHTML = “0”;
+        }
+        /* For debugging
+        alert(‘the andResult is: ’ + andResult);
+        alert(‘the nandResult is: ’ + nandResult);
+        alert(‘the orResult is: ’ + orResult);
+        alert(‘the nordResult is: ’ + norResult);
+        alert(‘the xorResult is: ’ + xorResult);*/
+    }
