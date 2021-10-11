@@ -60,6 +60,10 @@ def rgbTanay():
 def LogicGate():
     return render_template("LogicGate.html")
 
+@app.route('/UnsignedBinary/')
+def UnsignedBinary():
+    return render_template("UnsignedBinary.html")
+
 @app.route('/main/')
 def main():
     return render_template("main.html")
