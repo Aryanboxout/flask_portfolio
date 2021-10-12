@@ -48,9 +48,21 @@ def binary():
         BITS = int(request.form['BITS'])
     return render_template("binary.html",BITS=BITS)
 
+app.route('/Binarycolor/')
+def Binarycolor():
+    return render_template("Binarycolor.html", path=path, BITS=8)
+
 @app.route('/rgbNoah/')
 def rgbTanay():
     return render_template("rgbNoah.html", images=image_data())
+
+@app.route('/LogicGate/')
+def LogicGate():
+    return render_template("LogicGate.html")
+
+@app.route('/UnsignedBinary/')
+def UnsignedBinary():
+    return render_template("UnsignedBinary.html")
 
 @app.route('/main/')
 def main():

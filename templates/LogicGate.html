@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% set project = "LogicGate" %}
+
+{% block meta %}
+    <style>
+        .horizontalLine {
+            border: 0;
+            background-color: black;
+            height: 2px;
+            width: 150px;
+        }
+
+        .verticalLine {
+            margin-left: 1em;
+            width: 2px;
+            height: 375px;
+            background: black;
+        }
+
+        .buttonFalse {
+            background-color: black;
+            color: white;
+            font-style: normal;
+            width: 2em;
+        }
+
+        .buttonTrue {
+            background-color: white;
+            color: black;
+            font-style: italic;
+            width: 2em;
+        }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+    <font color = "black">
+        <div class="center">
+            <h1>Logic Gates</h1>
+        </div>
+
+        <div class="row">
+            <div class="column" style="height: 25em">   <!-- Two buttons to show 0 and 1 -->
+                <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">0</button>
+            </div>
+
+            <div class="column" style="position:relative; left:200px; top:-395px;">  <!-- NOT buttons that can be toggled; shows inverter -->
+                <p id="not1" onclick="toggleNot('not1')">NOT</p>
+            </div>
+            <div class="horizontalLine" style="position:relative; left:55px; top:-425px;"></div>
+        </div>
+
+        <div class="row">
+            <div class="column" style="position:relative; left:200px; top:-10px;">
+                <p id="not2" onclick="toggleNot('not2')">NOT</p>
+            </div>
+
+            <div class="column" style="position:relative; top:-52px;">
+                <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
+            </div>
+            <div class="horizontalLine" style="position:relative; left:55px; top:-70px;"></div>
+        </div>
+
+        <div class="row">
+            <div class="center">
+                <div class="verticalLine" style="position: relative; left: 200px; top: -470px;"></div>
+            </div>
+            <div class="center">
+                <div class="horizontalLine" style="position: relative; left: 217px; top: -660px;"></div>
+            </div>
+
+            <div class="center" style="position: relative; left: 375px; top: -672px;">  <!-- Clickable text that can change the operator used -->
+                <p id="operator" onclick="nextOp()">AND</p>
+            </div>
+
+            <div class="center">
+                <div class="horizontalLine" style="position: relative; left: 417px; top: -701px;"></div>
+            </div>
+
+            <div class="center" style="position: relative; left: 581px; top: -736px; font-size: 40px;">
+                <p id="result">true</p>
+            </div>
+        </div>
+    </font>
+
+    <script>
+
+        var operatorOrder = 0;
+
+        function toggleBool(id) {  // Toggles 0 and 1
+            const element = document.getElementById(id);
+
+            if (element.innerHTML == "1") {
+                element.innerHTML = "0";
+            } else {
+                element.innerHTML = "1";
+            }
+
+            element.classList.toggle("buttonTrue");
+            element.classList.toggle("buttonFalse");
+
+            result();
+        }
+
+        function toggleNot(id) {  // Toggles NOT buttons
+            const element = document.getElementById(id);
+
+            if (element.innerHTML == "NOT") {
+                element.innerHTML = "N/A";
+            } else {
+                element.innerHTML = "NOT";
+            }
+
+            result();
+        }
+
+        function nextOp() {  // Cycles through all of the operators. I used an array here to cycle and a global variable (operatorOrder) to keep track of the position
+            let operators = ["AND", "NAND", "OR", "NOR", "XOR"]
+            const element = document.getElementById("operator");
+            operatorOrder++;
+            if (operatorOrder > 4)
+                operatorOrder = 0;
+            element.innerHTML = operators[operatorOrder];
+
+            result();
+        }
+
+        function result() {  // Function that calculates the final results
+            let boolArray = [false, true];
+            let bool1 = boolArray[parseInt(document.getElementById("buttonOne").innerHTML)];
+            let bool2 = boolArray[parseInt(document.getElementById("buttonTwo").innerHTML)];  // Get the value of the two booleans via the buttons
+
+            if (document.getElementById("not1").innerHTML == "NOT") {
+                bool1 = !bool1;
+            }
+            if (document.getElementById("not2").innerHTML == "NOT") {
+                bool2 = !bool2;
+            }  // Account for NOT buttons
+
+            let result = false;
+            switch (operatorOrder) {  // Switch statement that takes into account each "case"
+                case 0:  // AND
+                    result = bool1 && bool2;
+                    break;
+                case 1:  // NAND (not AND)
+                    result = !(bool1 && bool2);
+                    break;
+                case 2:  // OR
+                    result = bool1 || bool2;
+                    break;
+                case 3:  // NOR (not OR)
+                    result = !(bool1 || bool2);
+                    break;
+                case 4:  // XOR
+                    result = bool1 != bool2;
+                    break;
+            }
+
+            document.getElementById("result").innerHTML = result; // display result
+        }
+
+        window.onload = result();
+
+    </script>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+
+{% endblock %}
