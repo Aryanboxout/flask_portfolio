@@ -4,7 +4,7 @@
 {% block body %}
     <body style = " background-color: darkblue;">
     <font color = "white">
-    <h1>Unsigned Signed Addition</h1>
+    <h1>Signed and Unsigned Addition Lab</h1>
 
     <br />
 
@@ -41,19 +41,19 @@
     <br />
 
     <div class="row">
-        <div class="col-sm-1"></div>
-        <button class="col-sm-1" id="add" onclick="unsignedAddition('add')">Add</button>
+        <div class="col-sm-5"></div>
+        <button class="col-sm-1" id="add" onclick="unsignedAddition('add')">Add Decimal Value</button>
 
-        <div class="offset-sm-8 col-sm-2">
+        <div class="offset-sm-7 col-sm-1">
             <p id="addOutput">Added Decimal Value: </p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-1"></div>
-        <button class="col-sm-2" id="signedAddition" onclick="signedAddition('signedAddition')">Toggle signed numbers and signed addition</button>
+        <div class="col-sm-5"></div>
+        <button class="col-sm-1" id="signedAddition" onclick="signedAddition('signedAddition')">Toggle Signed Addition</button>
 
-        <div class="offset-sm-7 col-sm-2">
+        <div class="offset-sm-7 col-sm-1">
             <p id="signedOutput">Signed Added Decimal value: </p>
         </div>
     </div>
@@ -91,7 +91,7 @@
                 sum1 = sum1;
             }
 
-            document.getElementById('x').innerHTML = "Signed Decimal value: " + sum1;
+            document.getElementById('x').innerHTML = "Value of Signed Decimal: " + sum1;
 
             if (firstBitTwo.innerHTML == "1") {
                 sum2 = 0-sum2;
@@ -100,11 +100,11 @@
                 sum2 = sum2;
             }
 
-            document.getElementById('y').innerHTML = "Signed Decimal value: " + sum2;
+            document.getElementById('y').innerHTML = "Added Decimal Value for Signed Addition: " + sum2;
 
             output = sum1 + sum2
             var outputStr = output.toString();
-            document.getElementById('signedOutput').innerHTML = "Unsigned Added Decimal value: " + outputStr;
+            document.getElementById('signedOutput').innerHTML = "Added Decimal Value for Unsigned Addition: " + outputStr;
 
         }
 
@@ -127,7 +127,7 @@
                 let element = document.getElementById(row + i);
                 sum += Math.pow(2, 8 - i) * parseInt(element.innerHTML);
             }
-            document.getElementById(row).innerHTML = "Unsigned Decimal value: " + sum;
+            document.getElementById(row).innerHTML = "Unsigned Value for Decimal: " + sum;
             switch (row) {
                 case 'o':
                     first = sum;
