@@ -43,14 +43,10 @@ def AryanPranavJournal():
 
 @app.route('/binary/',methods=['GET','POST'])
 def binary():
-    BITS=6
+    BITS=12
     if request.method == 'POST':
         BITS = int(request.form['BITS'])
     return render_template("binary.html",BITS=BITS)
-
-app.route('/Binarycolor/')
-def Binarycolor():
-    return render_template("Binarycolor.html", path=path, BITS=8)
 
 @app.route('/rgbNoah/')
 def rgbTanay():
@@ -67,6 +63,10 @@ def UnsignedSignedAddition():
 @app.route('/main/')
 def main():
     return render_template("main.html")
+
+@app.route('/Binarycolor/')
+def Binarycolor():
+    return render_template("Binarycolor.html")
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():

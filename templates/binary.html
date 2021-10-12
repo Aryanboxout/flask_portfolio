@@ -8,7 +8,7 @@
            use HTML Input Form in Frontend, ie toward top of Page
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
-{#% set BITS = 8 %#}
+{#% set BITS = 24 %#}
 {% set MAX = ((2 ** BITS) - 1) %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
@@ -251,13 +251,11 @@
                         {% for i in range(BITS) %}
                             <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
                                 <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                            <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
                             </td>
                         {% endfor %}
                     </tr>
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
-                        {% endfor %}
+
                     </tr>
                     {% for i in range(BITS) %} {# we just want 8 bits per row #}
                     {% if i % 8 == 0 %} {# this is a modulo operation where if the index is divisible by 8 then a table row gets created and if the index + 1 is divisible by 8 then the table row is ended #}
