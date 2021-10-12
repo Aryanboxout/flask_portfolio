@@ -60,6 +60,7 @@
 | Logic Gates.   CB requires an understanding of Expressions.  These are routed in Logic Gates (as language is routed in Latin). Consider an entirely different presentation area and idea.  In this example, you may have two inputs (a,b) and see how changing those inputs changes logic gate outputs (c).  This will likely require a different HTML.  | [Logic Gates](https://github.com/Aryanboxout/flask_portfolio/commit/533cc903ab851083edbd6e3f28d10663a81653b3) | Noah Jeng | 1/1 | 
 | Signed Addition, Subtraction (Selection).  Integer Numbers.  Subtraction (8th bit is a Sign, max number is  +127 and negative -128, overflow now produces negative number.  If sign bit is set the calculation is 128-bits. | [Signed Addition](https://github.com/Aryanboxout/flask_portfolio/commit/ead04aaadff2e96001d2fdbc8ac1f17fe3793d16) | Lucas Huang| 1/1| 
 
+Link to video for Sprint Week 7-8: https://www.youtube.com/watch?v=5jpiaikazMo
 
 
 ## Contributors
