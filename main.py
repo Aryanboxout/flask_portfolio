@@ -120,6 +120,8 @@ def greetPranav():
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
 
+
+    return render_template("starter/covid19.html", stats=response.json())
 if __name__ == "__main__":
     app.run(debug=True)
 
