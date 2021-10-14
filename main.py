@@ -68,6 +68,8 @@ def main():
 def Binarycolor():
     return render_template("Binarycolor.html")
 
+
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed

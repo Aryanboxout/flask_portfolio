@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Color Codes Lab Fully Updated">
-      <change beforePath="$PROJECT_DIR$/templates/UnsignedSignedAddition.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UnsignedSignedAddition.html" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Unsigned and Signed Addition Lab Updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Binarycolor.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Binarycolor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634021809351</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Unsigned and Signed Addition Lab Updated">
+      <created>1634022213748</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634022213748</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +241,7 @@
     <MESSAGE value="Binary fix" />
     <MESSAGE value="Unicode  and  Ascii" />
     <MESSAGE value="Color Codes Lab Fully Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Color Codes Lab Fully Updated" />
+    <MESSAGE value="Unsigned and Signed Addition Lab Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unsigned and Signed Addition Lab Updated" />
   </component>
 </project>
