@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Unsigned and Signed Addition Lab Updated">
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Web API Files">
+      <change afterPath="$PROJECT_DIR$/API/Webapi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Binarycolor.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Binarycolor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/WebAPI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -211,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634022213748</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Web API Files">
+      <created>1634241201739</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634241201739</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Web API Files">
+      <created>1634241245722</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634241245722</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +256,7 @@
     <MESSAGE value="Unicode  and  Ascii" />
     <MESSAGE value="Color Codes Lab Fully Updated" />
     <MESSAGE value="Unsigned and Signed Addition Lab Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unsigned and Signed Addition Lab Updated" />
+    <MESSAGE value="Web API Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Web API Files" />
   </component>
 </project>
