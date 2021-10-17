@@ -8,7 +8,20 @@
   <title>Team Information</title>
 </head>
 <body>
-<h1>Sports Team List</h1>
-<h2> Hi Everyone! Welcome to Sports Team Information. All talk about Transfers or latest Trades will be updated here. <h2>
+<h1 style="text-align:center"><p style="font-size:100px">Random Sports Links</h1>
+<script>
+    var sites = [
+        'https://www.nfl.com/',
+        'https://www.nba.com/',
+        'https://www.mlb.com/',
+        'http://www.youtube.com'
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<a href="#" onclick="randomSite();"><p style="text-align:center; font-size:75px">Sites</a>
 </body>
 </html>

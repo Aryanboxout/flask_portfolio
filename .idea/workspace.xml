@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="PBL Sports Betting Information Page">
-      <change afterPath="$PROJECT_DIR$/templates/joke.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sportsinfo.html" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="PBL Sports Information Page">
+      <change afterPath="$PROJECT_DIR$/templates/images.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/Webapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/Webapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sportsinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sportsinfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -235,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634241663093</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="PBL Sports Information Page">
+      <created>1634329151378</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634329151378</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +273,7 @@
     <MESSAGE value="Web API Files" />
     <MESSAGE value="Joke and COVID Web Api files" />
     <MESSAGE value="PBL Sports Betting Information Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="PBL Sports Betting Information Page" />
+    <MESSAGE value="PBL Sports Information Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="PBL Sports Information Page" />
   </component>
 </project>
