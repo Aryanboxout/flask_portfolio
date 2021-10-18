@@ -72,6 +72,26 @@ def Binarycolor():
 def sportsinfo():
     return render_template("sportsinfo.html")
 
+@app.route('/basketball/')
+def basketball():
+    return render_template("basketball.html")
+
+@app.route('/KobeTribute/')
+def KobeTribute():
+    return render_template("KobeTribute.html")
+
+@app.route('/football/')
+def football():
+    return render_template("football.html")
+
+@app.route('/soccer/')
+def soccer():
+    return render_template("soccer.html")
+
+@app.route('/baseball/')
+def baseball():
+    return render_template("baseball.html")
+
 @app.route('/joke', methods=['GET', 'POST'])
 def joke():
     """
@@ -167,6 +187,8 @@ def greetPranav():
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
 
+
+    return render_template("starter/covid19.html", stats=response.json())
 if __name__ == "__main__":
     app.run(debug=True)
 
