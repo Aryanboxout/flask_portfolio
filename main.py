@@ -12,6 +12,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/Historypage')
+def Historypage():
+    return render_template("Historypage.html")
+
 @app.route('/minilabs/')
 def minilabs():
     return render_template("minilabs.html")
