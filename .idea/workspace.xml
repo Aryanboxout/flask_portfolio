@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="PBL Sports Information Page">
-      <change afterPath="$PROJECT_DIR$/templates/images.py" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="PBL Sports Information Random Link Generator">
+      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/dazn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/mlb.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/mls.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/nba.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/nfl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/premleague.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sportsinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sportsinfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,12 +53,15 @@
     <setting file="file://$PROJECT_DIR$/templates/layouts/greet.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xxrNqqxeUePByAyuzheBC6y9Du" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -73,6 +80,8 @@
       <recent name="C:\Users\nacje\IdeaProjects\flask_portfolio\static\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/assets/SportsImages" />
+      <recent name="$PROJECT_DIR$/static/assets/Sports Images" />
       <recent name="$PROJECT_DIR$/static/assets" />
       <recent name="C:\Users\nacje\IdeaProjects\flask_portfolio\static\assets" />
     </key>
@@ -239,7 +248,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634329151378</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="PBL Sports Information Random Link Generator">
+      <created>1634447817941</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1634447817941</updated>
+    </task>
+    <task id="LOCAL-00018" summary="PBL Sports Information Random Link Generator">
+      <created>1634447835176</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634447835176</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +281,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="hi" />
     <MESSAGE value="Updated Journal Pages" />
     <MESSAGE value="Tanay Binary Page Changes" />
@@ -274,6 +298,7 @@
     <MESSAGE value="Joke and COVID Web Api files" />
     <MESSAGE value="PBL Sports Betting Information Page" />
     <MESSAGE value="PBL Sports Information Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="PBL Sports Information Page" />
+    <MESSAGE value="PBL Sports Information Random Link Generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="PBL Sports Information Random Link Generator" />
   </component>
 </project>
