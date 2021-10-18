@@ -92,6 +92,10 @@ def soccer():
 def baseball():
     return render_template("baseball.html")
 
+@app.route('/sportsdata/')
+def sportsdata():
+    return render_template("sportsdata.html")
+
 @app.route('/joke', methods=['GET', 'POST'])
 def joke():
     """
