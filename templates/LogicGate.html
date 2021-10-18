@@ -5,28 +5,28 @@
     <style>
         .horizontalLine {
             border: 0;
-            background-color: black;
-            height: 2px;
-            width: 150px;
+            background-color: yellowgreen;
+            height: 5px;
+            width: 130px;
         }
 
         .verticalLine {
             margin-left: 1em;
-            width: 2px;
+            width: 5px;
             height: 375px;
-            background: black;
+            background: blue;
         }
 
         .buttonFalse {
-            background-color: black;
-            color: white;
+            background-color: purple;
+            color: yellow;
             font-style: normal;
             width: 2em;
         }
 
         .buttonTrue {
-            background-color: white;
-            color: black;
+            background-color: deeppink;
+            color: lightskyblue;
             font-style: italic;
             width: 2em;
         }
@@ -35,7 +35,7 @@
 {% endblock %}
 
 {% block body %}
-    <font color = "black">
+    <font color = "red">
         <div class="center">
             <h1>Logic Gates</h1>
         </div>
@@ -78,7 +78,7 @@
                 <div class="horizontalLine" style="position: relative; left: 417px; top: -701px;"></div>
             </div>
 
-            <div class="center" style="position: relative; left: 581px; top: -736px; font-size: 40px;">
+            <div class="center" style="position: relative; left: 581px; top: -820px; font-size: 70px;">
                 <p id="result">true</p>
             </div>
         </div>
@@ -163,6 +163,7 @@
         window.onload = result();
 
     </script>
+
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->

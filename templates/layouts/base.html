@@ -38,8 +38,8 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             -moz-animation: fadein 2s; /* Firefox */
             -webkit-animation: fadein 2s; /* Safari and Chrome */
             -o-animation: fadein 2s; /* Opera */
-            background-color: var(--green);
             color: var(--black);
+            background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url("/static/assets/spaceart.jpeg");
         }
 
         .dark-mode {
@@ -123,14 +123,14 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     <div class="row justify-content-end" style="padding: 2%;">
         <div class="col-2" style="text-align: right;">
             {% block info %}
-                <!-- notice jinja style variables used in href's -->
-                <a><h5>{{basename}}</h5></a>
+            <!-- notice jinja style variables used in href's -->
+            <a><h5>{{basename}}</h5></a>
 
             {% endblock %}
         </div>
     </div>
 
-    <div class="product" style="margin-top: 2%;">
+    <div class="product"![](../../static/assets/SoccerShoes.jpeg) style="margin-top: 2%;">
         <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
 
             <div class="col-9" >
@@ -155,4 +155,5 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 {% endblock %}
 
 </html>
+
 
