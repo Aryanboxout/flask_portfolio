@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="PBL Sports Information Random Link Generator">
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/dazn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/mlb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/mls.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/nba.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/nfl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/premleague.jpeg" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Sports Columns with Images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sportsinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sportsinfo.html" afterDir="false" />
     </list>
@@ -262,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634447835176</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Sports Columns with Images">
+      <created>1634518943797</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1634518943797</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +300,7 @@
     <MESSAGE value="PBL Sports Betting Information Page" />
     <MESSAGE value="PBL Sports Information Page" />
     <MESSAGE value="PBL Sports Information Random Link Generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="PBL Sports Information Random Link Generator" />
+    <MESSAGE value="Sports Columns with Images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sports Columns with Images" />
   </component>
 </project>
