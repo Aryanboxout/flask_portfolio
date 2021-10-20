@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="PBL Sports Information Random Link Generator">
-      <change afterPath="$PROJECT_DIR$/templates/Historypage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layouts/covid19.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layouts/jokes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/joke.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/joke.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Sports History Page">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_11_01_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_11_01_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Historypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Historypage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +131,7 @@
       <workItem from="1633041532459" duration="696000" />
       <workItem from="1633122590014" duration="432000" />
       <workItem from="1634017935927" duration="376000" />
+      <workItem from="1634759450625" duration="186000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1631307665962</created>
@@ -274,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634539548304</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Sports History Page">
+      <created>1634584652477</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634584652477</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,12 +319,13 @@
     <MESSAGE value="PBL Sports Information Random Link Generator" />
     <MESSAGE value="Sports Columns with Images" />
     <MESSAGE value="Navbar Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar Fixed" />
+    <MESSAGE value="Sports History Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sports History Page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1632077186266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/g$g.coverage" NAME="g Coverage Results" MODIFIED="1631308565404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flask_portfolio2$main.coverage" NAME="main Coverage Results" MODIFIED="1634584610383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio2$main.coverage" NAME="main Coverage Results" MODIFIED="1634759676251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/g$main.coverage" NAME="main Coverage Results" MODIFIED="1632166966334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631719201937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flask_portfolio2$flask_portfolio2.coverage" NAME="flask_portfolio2 Coverage Results" MODIFIED="1631307451060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
