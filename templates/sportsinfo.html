@@ -1,4 +1,9 @@
 <!doctype html>
+
+{% extends "layouts/base.html" %}
+
+{%  block body %}
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +14,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <h1 style="text-align:center"><p style="font-size:80px">Random Sports Links</h1>
+    <h1 style="text-align:center"><p style="font-size:80px">Sports Websites</h1>
   </div>
 
   <body style="background: linear-gradient( #33ccff 0%, #66ff66 100%); height:1200px"></body>
@@ -40,7 +45,7 @@
 
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Merriweather;
 }
 
 .header {
@@ -83,11 +88,14 @@ body {
       <img src="/static/assets/SportsImages/mls.jpeg" style="width:80%; height:600px">
     </div>
     <div class="column">
-      <h2>Sports Column 1</h2>
-      <img src="/static/assets/SportsImages/nba.jpeg" style="width:80%">
-      <img src="/static/assets/SportsImages/premleague.jpeg" style="width:80%">
-      <img src="/static/assets/SportsImages/dazn.png" style="width:80%; height:475px">
+      <h2 style="align-center">Sports Column 1</h2>
+        <img src="/static/assets/SportsImages/nba.jpeg" style="width:80%">
+        <img src="/static/assets/SportsImages/premleague.jpeg" style="width:80%">
+        <img src="/static/assets/SportsImages/dazn.png" style="width:80%; height:475px">
+
     </div>
 
 </body>
 </html>
+
+{% endblock %}

@@ -1,5 +1,24 @@
 <!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{%  block body %}
+
 <html lang="en">
+<script>
+    function setImg() {
+
+        if (document.getElementById("img1").src == document.getElementById("img_orig1").innerHTML)
+        {
+            document.getElementById("img1").src = document.getElementById("img_gray1").innerHTML;
+            document.getElementById("btn1").value = "Color";
+        }
+        else {
+
+            document.getElementById("img1").src = document.getElementById("img_orig1").innerHTML;
+            document.getElementById("btn1").value = "Gray Scale";
+        }
+    }
+    </script>
 <head>
     <title>Sports History Document</title>
     <meta charset="UTF-8">
@@ -119,6 +138,7 @@
             background-color: #dddddd;
         }
     </style>
+
 </head>
 <body>
 
@@ -153,8 +173,11 @@
     <div class="main">
         <h2>Soccer</h2>
         <h5>The World's Most Famous Sport</h5>
-        <div class="" >Best Soccer Players</div>
+        <div class="">Best Soccer Players</div>
         <img src="https://static01.nyt.com/images/2020/09/25/sports/25soccer-nationalWEB1/merlin_177451008_91c7b66d-3c8a-4963-896e-54280f374b6d-superJumbo.jpg" alt="Girl in a jacket" width="300" height="300">
+        <td>
+            <input type="button"  id="btn1" value="Gray Scale" onclick="setImg()">
+        </td>
 
         <p>Soccer Facts</p>
         <p>Soccer/Football is a sport that was originally created in China but then was refurbished and changed in England. Since then, soccer has spread throughout the world and become the worlds largest sport with over 4 billion people watching and playing the sport. It is mainly popular in Europe and South America which make up the bulkload of the supporters. However, North America and Africa are quickly catching on to the wave and soccer is growing rapidly in these continents. </p>
@@ -219,3 +242,5 @@
 
 </body>
 </html>
+
+{% endblock %}

@@ -5,7 +5,7 @@ from flask import Blueprint, jsonify
 api_bp = Blueprint('api', __name__,
                    url_prefix='/api',
                    template_folder='templates',
-                   static_folder='static', static_url_path='static/api')
+                   static_folder='static', static_url_path='Webapi.py')
 
 jokes = []
 joke_list = [
@@ -29,7 +29,6 @@ joke_list = [
     "Q: What is the biggest lie in the entire universe? A: I have read and agree to the Terms and Conditions.",
     'An SQL statement walks into a bar and sees two tables. It approaches, and asks may I join you?'
 ]
-
 
 def _find_next_id():
     return max(jokes["id"] for joke in jokes) + 1
