@@ -211,7 +211,6 @@ def joke():
     response = requests.request("GET", url)
     return render_template("starter/joke.html", joke=response.json())
 
-
 @app_starter.route('/jokes', methods=['GET', 'POST'])
 def jokes():
     """
@@ -223,9 +222,9 @@ def jokes():
     response = requests.request("GET", url)
     return render_template("starter/jokes.html", jokes=response.json())
 
-
 @app_starter.route('/covid19', methods=['GET', 'POST'])
 def covid19():
+    import requests
     url = "https://corona-virus-world-and-india-data.p.rapidapi.com/api"
     headers = {
         'x-rapidapi-key': "dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063",
@@ -244,3 +243,16 @@ def covid19():
     """
 
     return render_template("starter/covid19.html", stats=response.json())
+
+@app_starter.route('/SportsAPI', methods=['GET', 'POST'])
+def SportsAPI():
+    import requests
+    url = "https://therundown-therundown-v1.p.rapidapi.com/affiliates"
+    headers = {
+    'x-rapidapi-host': "therundown-therundown-v1.p.rapidapi.com",
+    'x-rapidapi-key': "SIGN-UP-FOR-KEY"
+    }
+    response = requests.request("GET", url, headers=headers)
+
+
+    return render_template("templates/SportsAPI.html", stats=response.json())
