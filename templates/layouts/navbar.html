@@ -2,6 +2,10 @@
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
 
+<style>
+    background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url("/static/assets/spaceart.jpeg");
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/">{{basename}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +35,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     MiniLabs
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/brainWrite">BrainWrite</a>
                     <a class="dropdown-item" href="/wireframes">Wireframe Designs</a>
-                    <a class="dropdown-item" href="/sprint">Sprints Per Week</a>
                     <a class="dropdown-item" href="/rgbNoah">RGB Values</a>
                     <a class="dropdown-item" href="/binary">Binary Math Lab</a>
                     <a class="dropdown-item" href="/Binarycolor">Color Lab</a>
@@ -52,7 +54,9 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/sportsinfo">Sports Information (Updated)</a>
                     <a class="dropdown-item" href="/sportsdata">Sports Financial Data</a>
+                    <a class="dropdown-item" href="/Historypage">Sports History Page</a>
                 </div>
+            </li>
 
 
             <li class="nav-item dropdown">
@@ -66,6 +70,18 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     <a class="dropdown-item" href="/soccer">Socccer</a>
                     <a class="dropdown-item" href="/KobeTribute">Kobe Tribute</a>
                 </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarModel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tanay Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/API/Webapi">Jokes</a>
+                    <a class="dropdown-item" href="/movie">Movies</a>
+                    <a class="dropdown-item" href="/calculator">Calculator</a>
+                </div>
+            </li>
 
 
         </div>

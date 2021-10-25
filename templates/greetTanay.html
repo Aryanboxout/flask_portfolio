@@ -1,9 +1,6 @@
-
-
 !-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/base.html" %}
 
-<!-- Setting up variables to customize "project" details to be specific to walruses -->
 {% set project = "Tanay's" %}
 
 {%  block body %}
@@ -13,26 +10,28 @@
     <div>
         <form action="/Tanay/" id="Tanay" method="POST" >
             <div>
-                <label for="name" style="padding-top: 4%">Hi, what is your name? </label>
+                <label for="name" style="font-family:verdana">Hi, what is your name? </label>
             </div>
-            <div style="padding: 0 0 1% 0">
+            <div style="font-family:verdana">
                 <input name="name" id="name">
                 <input type="Submit" value="Submit">
             </div>
         </form>
     </div>
-    <div style="margin: 2% 0 0 0">
+    <div style="font-family:verdana">
         Hello, {{ Everyone }}, I hope you are having a wonderful day!
     </div>
 
     <img src="/static/assets/Tanay.jpeg" style="height: 400px; margin: 10%; border: 7px solid white;" alt="Photo of Tanay">
 
-    <p style="padding: 10%">
+    <p style="font-family:verdana">
         Hello, my name is Tanay Rayavarapu and I am one of the members of Team Cosmos in AP Computer Science. Outside of school, I am a black belt in Taekwondo and was a part of the Del Norte Swim Team in my freshman and sophomore years. I was born in Oceanside, California, and have lived in 4s Ranch my entire life.
     </p>
     <div>
         </form>
     </div>
+
+    <button onclick="window.location.href='/templates/tanayprojects/Palindromes'">Continue</button>
 
 </body>
 {% endblock %}

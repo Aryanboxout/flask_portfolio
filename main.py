@@ -71,9 +71,7 @@ def Binarycolor():
 @app.route('/sportsinfo/')
 def sportsinfo():
     return render_template("sportsinfo.html")
-@app.route('/portal/')
-def portal():
-    return render_template("portal.html")
+
 @app.route('/basketball/')
 def basketball():
     return render_template("basketball.html")
@@ -222,7 +220,6 @@ def jokes():
     return render_template("starter/jokes.html", jokes=response.json())
 
 
-
 @app_starter.route('/covid19', methods=['GET', 'POST'])
 def covid19():
     url = "https://corona-virus-world-and-india-data.p.rapidapi.com/api"
@@ -240,8 +237,6 @@ def covid19():
     print(world['total_cases'])
     for country in countries:
         print(country["country_name"])
-        
-    
     """
 
     return render_template("starter/covid19.html", stats=response.json())
