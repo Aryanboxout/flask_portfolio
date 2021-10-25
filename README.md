@@ -79,7 +79,7 @@ Link to video for Sprint Week 7-8: https://www.youtube.com/watch?v=5jpiaikazMo
 | [Link](https://www.youtube.com/watch?v=o7X2SzvVm4k) | [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71488450) | Aryan Shah| | 
 | [Link](https://www.youtube.com/watch?v=W6dslIQNoRk)| [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71495409) | Noah Jeng | | 
 | [Link](https://youtu.be/JZY-ED7d_mg) |[Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71487685) | Pranav Parthasarathy |  |
-| |  | Lucas Huang |  | 
+| |https://www.youtube.com/watch?v=Sae-dJq0nx8| Lucas Huang |  | 
 
 
 ## Contributors
