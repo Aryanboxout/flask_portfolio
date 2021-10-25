@@ -18,6 +18,11 @@ def index():
 def Historypage():
     return render_template("Historypage.html")
 
+@app.route('/googleform')
+def googleform():
+    return render_template("googleform.html")
+
+
 @app.route('/minilabs/')
 def minilabs():
     return render_template("minilabs.html")
