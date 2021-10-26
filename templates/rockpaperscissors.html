@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Rock Paper Scissors</title>
+
+    <style>
+        #endgame{display:none};
+    </style>
+
+
+</head>
+<body>
+
+<div class="container text-light mt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-5 p-3 text-center pt-5" id="startgame">
+            <h1 class="text-dark font-weight-bold display-3" id="result">First to 10 Wins!</h1>
+            <p class="text-dark font-weight-bold lead text-capitalize p-5" id="vstext"></p>
+            <p>
+                <span class="text-dark">Human: <b id="playerscore"></b></span>
+                <span class="text-dark">Computer AI: <b id="aiscore"></b></span>
+            </p>
+            <button type="button" onclick="playGame(this)" class="btn-lg btn-primary btn-block">rock</button>
+            <button type="button" onclick="playGame(this)" class="btn-lg btn-secondary btn-block">paper</button>
+            <button type="button" onclick="playGame(this)" class="btn-lg btn-success btn-block">scissors</button>
+        </div>
+        <div class="col-md-5 p-3 text-center pt-5" id="endgame">
+            <h1 class="text-dark font-weight-bold display-3" id="result"></h1>
+            <p>
+                <span class="text-dark">Human: <b id="playerscore">0</b></span>
+                <span class="text-dark">Computer AI: <b id="aiscore">0</b></span>
+            </p>
+            <button type="button" onClick="window.location.reload();" class="btn-lg btn-primary btn-block">Play again</button>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    /** Set score variables */
+    let humanScore = 0;
+    let aiScore = 0;
+    let result = 'Start';
+
+    /** Show score */
+    function showScore() {
+
+        document.getElementById("playerscore").innerText = humanScore;
+        document.getElementById("aiscore").innerText = aiScore;
+        document.getElementById("result").innerText = result;
+
+    }
+
+    /** Start Game and output results */
+    function playGame(humanInput) {
+
+        let humanSelection = humanInput.textContent;
+        let aiSelection = getAiSelection();
+        let result = calcResult(humanSelection, aiSelection);
+        document.getElementById("vstext").innerText = humanSelection + ' VS ' + aiSelection;
+        showScore();
+
+    }
+
+    /** AI Selection */
+    function getAiSelection() {
+
+        const options = ['rock', 'paper', 'scissors'];
+        let aiSelector = options[Math.floor(Math.random()*options.length)];
+        return aiSelector;
+
+    }
+
+    /** Determine game results */
+    function calcResult(human, ai) {
+
+        if (human === ai) {
+            result = 'Draw'
+            return;
+        } else if ((human === 'rock' && ai === 'scissors') || (human === 'paper' && ai === 'rock') || (human === 'scissors' && ai === 'paper')) {
+
+            humanScore += 1;
+
+            if (humanScore == 10){
+                result = "You are the winner!";
+                endgame();
+            } else {
+                result = 'Win'
+                return;
+            }
+
+        } else {
+            aiScore += 1;
+
+            if (aiScore == 10){
+                result = 'Computer is the Winner'
+                endgame();
+            } else {
+                result = 'Lose'
+                return;
+            }
+
+        }
+
+    }
+
+    function endgame(){
+
+        var ele = document.getElementById('startgame');
+        ele.remove();
+        document.getElementById("endgame").style.display = "block";
+        showScore();
+
+    }
+
+</script>
+
+</body>
+</html>
