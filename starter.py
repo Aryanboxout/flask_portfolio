@@ -1,6 +1,7 @@
 import requests
 from flask import Blueprint, render_template
 from algorithm.image import image_data
+from PIL import Image
 
 from pathlib import \
     Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
@@ -67,3 +68,17 @@ def covid19():
 
     return render_template("starter/covid19.html", stats=response.json())
 
+@app_starter.route('/nbaapi', methods=['GET', 'POST'])
+def nbaapi():
+    url = "https://free-nba.p.rapidapi.com/players"
+
+    querystring = {"page":"0","per_page":"25"}
+
+    headers = {
+    'x-rapidapi-host': "free-nba.p.rapidapi.com",
+    'x-rapidapi-key': "93746869c3msh83c9cc7d1d2ed0ap1ee0aajsnac6643923a7b"
+    }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    print(response.text)

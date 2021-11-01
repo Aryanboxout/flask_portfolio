@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<div class="container">
+
+    <div class="center-block" style="margin: 2% 5% 5%; font-family:georgia,serif;">
+        <div class="col-12" style="text-align: center;">
+            <h1><strong>Athlete Generator</strong></h1>
+            <form action={{url_for('athlete')}}>
+                <button>Refresh!</button>
+            </form>
+        </div>
+
+        <!-- Input and Content -->
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <img class="img-responsive py-3"  alt="" width="600" height="475" src="{{ athlete }}">
+            </div>
+        </div>
+
+    </div>
+    <table style="margin: 0%">
+        <tr>
+            <th>JSON Data</th>
+        </tr>
+        <tr>
+            <td>{{ athlete }}</td>
+        </tr>
+    </table>
+
+</div>
+{% endblock %}
