@@ -14,13 +14,24 @@ app_starter = Blueprint('starter', __name__,
 
 @app_starter.route('/binary/')
 def binary():
+    print('PATH')
     return render_template("starter/binary.html")
 
 
 @app_starter.route('/rgb/')
 def rgb():
     path = Path(app_starter.root_path) / "static" / "img"
+    print('PATH', path)
     return render_template('starter/rgb.html', images=image_data(path))
+
+@app_starter.route('/historypage/')
+def historypage():
+    path = Path(app_starter.root_path) / "static" / "img"
+    print('PATH', path)
+    img_list = [
+        {'source': "Peter Carolin", 'label': "Messi Pic", 'file': "messi.png"}
+    ]
+    return render_template('starter/historypage.html', images=image_data(path, img_list))
 
 
 @app_starter.route('/joke', methods=['GET', 'POST'])

@@ -14,9 +14,12 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/Historypage')
-def Historypage():
-    return render_template("Historypage.html")
+@app.route('/historypage/')
+def historypage():
+    img_list = [
+        {'source': "Peter Carolin", 'label': "Messi Pic", 'file': "messi.png"}
+    ]
+    return render_template("historypage.html", images=image_data("static/assets/", img_list))
 
 @app.route('/googleform')
 def googleform():
@@ -29,6 +32,7 @@ def minilabs():
 
 @app.route('/rgbNoah/')
 def rgbNoah():
+    print('PATH')
     return render_template("rgbNoah.html", images=image_data())
 
 @app.route('/wireframes/')
