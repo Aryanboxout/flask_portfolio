@@ -127,6 +127,10 @@ def tipcalculator():
 def rockpaperscissors():
     return render_template("rockpaperscissors.html")
 
+@app.route('/RandomTeamGenerator/')
+def RandomTeamGenerator():
+    return render_template("RandomTeamGenerator.html")
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed

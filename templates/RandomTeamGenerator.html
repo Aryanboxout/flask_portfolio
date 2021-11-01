@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title> Random Team Generator</title>
+</head>
+<body>
+<h1>Random Team Generator</h1>
+<h2>Just got into soccer and need a team to root for?</h2>
+<div id="container">
+    <button id="btn">Press for a new team!</button>
+    <div id="output">Press the button to generate a team</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: #333232;
+    }
+
+    #container {
+        background-color: black;
+        border: 5px solid pink;
+        height: 275px;
+        width: 750px;
+        margin: auto;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        color: lightpink;
+    }
+
+    h2 {
+        text-align: center;
+        color: lightpink;
+    }
+
+    #btn {
+        margin: 50px auto;
+        height: 50px;
+        width: 250px;
+        font-size: 22px;
+        background-color: rgb(192, 191, 191);
+
+    }
+
+    #output {
+        margin: 25px auto;
+        font-size: 26px;
+        color: lightpink;
+    }
+</style>
+
+<script>
+    let btn = document.getElementById('btn');
+    let output = document.getElementById('output');
+    let teams = [
+        'Chelsea',
+        'Liverpool',
+        'Manchester City',
+        'West Ham United',
+        'Manchester United',
+        'Arsenal',
+        'Brighton and Hove Albion',
+        'Tottenham Hotspur',
+        'Everton',
+        'Leicester City',
+        'Wolverhampton Wanderers',
+        'Brentford',
+        'Crystal Palace',
+        'Southampton',
+        'Aston Villa',
+        'Watford',
+        'Leeds United',
+        'Burnley',
+        'Newcastle United',
+        'Norwich City'
+    ];
+
+    btn.addEventListener('click', function(){
+        var randomTeam = teams[Math.floor(Math.random() * teams.length)]
+        output.innerHTML = randomTeam;
+    })
+</script>
+
