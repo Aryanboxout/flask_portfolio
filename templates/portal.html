@@ -71,6 +71,9 @@ let a=true;
         if (password.value === 'PSSWRD') {
             var isStrong=false;
         }
+        if (password.value === '') {
+            var isStrong=false;
+        }
 if( isStrong == false){
     alert('This is a weak password')
         }
@@ -88,6 +91,7 @@ messages.push('congrats that is a strong password')
     })
 
 </script>
+
 
 
 
