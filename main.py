@@ -1,6 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
-import requests
+
 
 # create a Flask instance
 from image import image_data
@@ -122,6 +122,15 @@ def joke():
 def calculator():
     return render_template("calculator.html")
 
+@app.route('/tipcalculator/')
+def tipcalculator():
+    return render_template("tipcalculator.html")
+
+
+@app.route('/rockpaperscissors/')
+def rockpaperscissors():
+    return render_template("rockpaperscissors.html")
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed
@@ -174,6 +183,10 @@ def greetPranav():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route('/homepage/')
+def homepage():
+    return render_template("homepage.html")
 
 @app.route('/joke', methods=['GET', 'POST'])
 def joke():
