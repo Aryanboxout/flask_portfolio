@@ -1,8 +1,10 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
+import requests
 
 # create a Flask instance
 from image import image_data
+
 
 app = Flask(__name__)
 
@@ -12,6 +14,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/Historypage')
+def Historypage():
+    return render_template("Historypage.html")
+
 @app.route('/minilabs/')
 def minilabs():
     return render_template("minilabs.html")
@@ -19,7 +25,6 @@ def minilabs():
 @app.route('/rgbNoah/')
 def rgbNoah():
     return render_template("rgbNoah.html", images=image_data())
-
 
 @app.route('/wireframes/')
 def wireframes():
@@ -96,50 +101,17 @@ def baseball():
 def sportsdata():
     return render_template("sportsdata.html")
 
-@app.route('/joke', methods=['GET', 'POST'])
+@app.route('/movie/')
+def movie():
+    return render_template("movie.html")
+
+@app.route('/joke/')
 def joke():
-    """
-    # use this url to test on and make modification on you own machine
-    url = "http://127.0.0.1:5222/api/joke"
-    """
-    url = "https://csp.nighthawkcodingsociety.com/api/joke"
-    response = requests.request("GET", url)
-    return render_template("starter/joke.html", joke=response.json())
+    return render_template("joke.html")
 
-
-@app.route('/jokes', methods=['GET', 'POST'])
-def jokes():
-    """
-    # use this url to test on and make modification on you own machine
-    url = "http://127.0.0.1:5222/api/jokes"
-    """
-    url = "https://csp.nighthawkcodingsociety.com/api/jokes"
-
-    response = requests.request("GET", url)
-    return render_template("starter/jokes.html", jokes=response.json())
-
-
-@app.route('/covid19', methods=['GET', 'POST'])
-def covid19():
-    url = "https://corona-virus-world-and-india-data.p.rapidapi.com/api"
-    headers = {
-        'x-rapidapi-key': "dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063",
-        'x-rapidapi-host': "corona-virus-world-and-india-data.p.rapidapi.com"
-    }
-
-    response = requests.request("GET", url, headers=headers)
-
-    """
-    # uncomment this code to test from terminal
-    world = response.json().get('world_total')
-    countries = response.json().get('countries_stat')
-    print(world['total_cases'])
-    for country in countries:
-        print(country["country_name"])
-    """
-
-    return render_template("starter/covid19.html", stats=response.json())
-
+@app.route('/calculator/')
+def calculator():
+    return render_template("calculator.html")
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
@@ -191,52 +163,30 @@ def greetPranav():
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
 
-
-    return render_template("starter/covid19.html", stats=response.json())
 if __name__ == "__main__":
     app.run(debug=True)
 
-
-@app_starter.route('/joke', methods=['GET', 'POST'])
+@app.route('/joke', methods=['GET', 'POST'])
 def joke():
     """
     # use this url to test on and make modification on you own machine
     url = "http://127.0.0.1:5222/api/joke"
     """
     url = "https://csp.nighthawkcodingsociety.com/api/joke"
-    response = requests.request("GET", url)
-    return render_template("starter/joke.html", joke=response.json())
+    response = request("GET", url)
+    return render_template("template/joke.html", joke=response.json())
 
 
-@app_starter.route('/jokes', methods=['GET', 'POST'])
-def jokes():
-    """
-    # use this url to test on and make modification on you own machine
-    url = "http://127.0.0.1:5222/api/jokes"
-    """
-    url = "https://csp.nighthawkcodingsociety.com/api/jokes"
 
-    response = requests.request("GET", url)
-    return render_template("starter/jokes.html", jokes=response.json())
+url = "https://movies-tvshows-data-imdb.p.rapidapi.com/"
 
+querystring = {"type":"get-movies-by-title","title":"matrix"}
 
-@app_starter.route('/covid19', methods=['GET', 'POST'])
-def covid19():
-    url = "https://corona-virus-world-and-india-data.p.rapidapi.com/api"
-    headers = {
-        'x-rapidapi-key': "dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063",
-        'x-rapidapi-host': "corona-virus-world-and-india-data.p.rapidapi.com"
-    }
+headers = {
+    'x-rapidapi-host': "movies-tvshows-data-imdb.p.rapidapi.com",
+    'x-rapidapi-key': "93746869c3msh83c9cc7d1d2ed0ap1ee0aajsnac6643923a7b"
+}
 
-    response = requests.request("GET", url, headers=headers)
+response = requests.request("GET", url, headers=headers, params=querystring)
 
-    """
-    # uncomment this code to test from terminal
-    world = response.json().get('world_total')
-    countries = response.json().get('countries_stat')
-    print(world['total_cases'])
-    for country in countries:
-        print(country["country_name"])
-    """
-
-    return render_template("starter/covid19.html", stats=response.json())
+print(response.text)

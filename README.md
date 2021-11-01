@@ -73,13 +73,13 @@ Link to video for Sprint Week 7-8: https://www.youtube.com/watch?v=5jpiaikazMo
 Link to video for Sprint Week 7-8: https://www.youtube.com/watch?v=5jpiaikazMo
 
 # Sprint 9-10 Week 9
-| Link to Video | Scrum Team Comments/Grades| Assigned to: |Average Score
-|:-----|:--------------------| :--------------------|:--------------------|
-|  |  | Tanay Rayavarapu | | 
-| [Link](https://www.youtube.com/watch?v=o7X2SzvVm4k) | [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71488450) | Aryan Shah| | 
-|  |  | Noah Jeng | | 
-| [Link](https://youtu.be/JZY-ED7d_mg) |[Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71487685) | Pranav Parthasarathy |  |
-| |  | Lucas Huang |  | 
+| Link to Video | Scrum Team Comments/Grades| Assigned to: |Average Score | Individual Commits
+|:-----|:--------------------| :--------------------|:--------------------|:--------------------|
+| [Link](https://www.loom.com/share/4ef9f7e6ef9d4f1aad2dcd733efdbc19) | [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71494585) | Tanay Rayavarapu | 5.73/6 | [Athlete API](https://github.com/Aryanboxout/flask_portfolio/commit/9771269f256721b29be611b8bcc7c2e900219814)|
+| [Link](https://www.youtube.com/watch?v=o7X2SzvVm4k) | [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71488450) | Aryan Shah| 5.65/6 | 
+| [Link](https://www.youtube.com/watch?v=W6dslIQNoRk)| [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71495409) | Noah Jeng |  5.67/6| 
+| [Link](https://youtu.be/JZY-ED7d_mg) |[Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71487685) | Pranav Parthasarathy | 5.53/6 | [Gray Scale](https://github.com/Aryanboxout/flask_portfolio/commit/bbc9931fa5103378b3745c0989ddb1159b89bbed) |
+| [Link](https://www.youtube.com/watch?v=Sae-dJq0nx8) | [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71497499) | Lucas Huang | 5.35/6 | 
 
 
 ## Contributors

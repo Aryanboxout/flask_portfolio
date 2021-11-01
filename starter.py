@@ -1,6 +1,7 @@
 import requests
 from flask import Blueprint, render_template
 from algorithm.image import image_data
+from PIL import Image
 
 from pathlib import \
     Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
@@ -14,13 +15,24 @@ app_starter = Blueprint('starter', __name__,
 
 @app_starter.route('/binary/')
 def binary():
+    print('PATH')
     return render_template("starter/binary.html")
 
 
 @app_starter.route('/rgb/')
 def rgb():
     path = Path(app_starter.root_path) / "static" / "img"
+    print('PATH', path)
     return render_template('starter/rgb.html', images=image_data(path))
+
+@app_starter.route('/historypage/')
+def historypage():
+    path = Path(app_starter.root_path) / "static" / "img"
+    print('PATH', path)
+    img_list = [
+        {'source': "Peter Carolin", 'label': "Messi Pic", 'file': "messi.png"}
+    ]
+    return render_template('starter/historypage.html', images=image_data(path, img_list))
 
 
 @app_starter.route('/joke', methods=['GET', 'POST'])
@@ -67,3 +79,17 @@ def covid19():
 
     return render_template("starter/covid19.html", stats=response.json())
 
+@app_starter.route('/nbaapi', methods=['GET', 'POST'])
+def nbaapi():
+    url = "https://free-nba.p.rapidapi.com/players"
+
+    querystring = {"page":"0","per_page":"25"}
+
+    headers = {
+    'x-rapidapi-host': "free-nba.p.rapidapi.com",
+    'x-rapidapi-key': "93746869c3msh83c9cc7d1d2ed0ap1ee0aajsnac6643923a7b"
+    }
+
+    response = requests.request("GET", url, headers=headers, params=querystring)
+
+    print(response.text)
