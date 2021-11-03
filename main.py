@@ -1,12 +1,15 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
-
+import requests
+from API.athletesapi import api_bp
+import json
 
 # create a Flask instance
 from image import image_data
 
-
 app = Flask(__name__)
+app.register_blueprint(api_bp)
+#extends athletes.api file and imports json data
 
 
 # connects default URL to render index.html
@@ -14,9 +17,12 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/Historypage')
-def Historypage():
-    return render_template("Historypage.html")
+@app.route('/historypage/')
+def historypage():
+    img_list = [
+        {'source': "Peter Carolin", 'label': "Messi Pic", 'file': "messi.png"}
+    ]
+    return render_template("historypage.html", images=image_data("static/assets/", img_list))
 
 @app.route('/googleform')
 def googleform():
@@ -29,6 +35,7 @@ def minilabs():
 
 @app.route('/rgbNoah/')
 def rgbNoah():
+    print('PATH')
     return render_template("rgbNoah.html", images=image_data())
 
 @app.route('/wireframes/')
@@ -110,10 +117,6 @@ def sportsdata():
 def movie():
     return render_template("movie.html")
 
-@app.route('/joke/')
-def joke():
-    return render_template("joke.html")
-
 @app.route('/calculator/')
 def calculator():
     return render_template("calculator.html")
@@ -127,9 +130,13 @@ def tipcalculator():
 def rockpaperscissors():
     return render_template("rockpaperscissors.html")
 
-@app.route('/RandomTeamGenerator/')
-def RandomTeamGenerator():
-    return render_template("RandomTeamGenerator.html")
+@app.route('/photoedit/')
+def photoedit():
+    return render_template("photoedit.html")
+
+@app.route('/imagemanipulation/')
+def imagemanipulation():
+    return render_template("imagemanipulation.html")
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
@@ -181,34 +188,21 @@ def greetPranav():
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
 @app.route('/homepage/')
 def homepage():
     return render_template("homepage.html")
 
-@app.route('/joke', methods=['GET', 'POST'])
-def joke():
-    """
-    # use this url to test on and make modification on you own machine
-    url = "http://127.0.0.1:5222/api/joke"
-    """
-    url = "https://csp.nighthawkcodingsociety.com/api/joke"
-    response = request("GET", url)
-    return render_template("template/joke.html", joke=response.json())
+@app.route('/athlete/', methods=['GET', 'POST'])
+def athlete():
+    #url = "http://localhost:5000/api/athlete"
+    url = "http://127.0.0.1:5000/api/athlete"
 
+    response = requests.request("GET", url)
+    return render_template("athlete.html", athlete=response.json())
 
-
-url = "https://movies-tvshows-data-imdb.p.rapidapi.com/"
-
-querystring = {"type":"get-movies-by-title","title":"matrix"}
-
-headers = {
-    'x-rapidapi-host': "movies-tvshows-data-imdb.p.rapidapi.com",
-    'x-rapidapi-key': "93746869c3msh83c9cc7d1d2ed0ap1ee0aajsnac6643923a7b"
-}
-
-response = requests.request("GET", url, headers=headers, params=querystring)
-
-print(response.text)
+if __name__ == "__main__":
+    app.run(
+            debug=True,
+            host="127.0.0.1",
+            port=5000
+    ),

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers</title>
+</head>
+<body>
+<style>
+    body {
+          padding: 0;
+          margin: 0;
+          background: linear-gradient(to left, #33ccff, #ff99cc);
+        }
+</style>
+<h1 style="text-align:center; font-size:100px">Positive Or Negative?</h1>
+    <form method="POST" style="text-align:center; font-size:30px">
+        <label for="name">Sign Checker</label>
+        <input type=text >
+        <input type="button" value="Enter Number (All Real Integers)">
+        <script>
+        num = float(input("Enter a number: "))
+        if num >= 0:
+           if num == 0:
+               print("Zero")
+           else:
+               print("Positive number")
+        else:
+           print("Negative number")
+    </script>
+    </form>
+    <p style="text-align:center; font-size:100px">Number has not been entered</p>
+
+
+</body>
+</html>
