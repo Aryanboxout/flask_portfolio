@@ -138,6 +138,10 @@ def photoedit():
 def imagemanipulation():
     return render_template("imagemanipulation.html")
 
+@app.route('/searchbar/')
+def searchbar():
+    return render_template("searchbar.html")
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed

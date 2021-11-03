@@ -16,7 +16,10 @@ athlete_list = [
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEH6rxjLnL7BpD6EZsidIGO_uu74N60_fimg&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPPEELFC71AYl6OdFhoRipf0YWemKv28WotQ&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqLbpHRP391yRt1VOLbA2H4ox1twjLp5goA&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQII4DmYUgPYQrYWjdDqaeet5fTRzG-4uMvgA&usqp=CAU"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQII4DmYUgPYQrYWjdDqaeet5fTRzG-4uMvgA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhrysw3e3U-cIzJhkGXf4_ERzMmonTi-pEQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjo937imrmzS6Ukq_Mkl3jaYP-6CVhK8l2TA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIV9ulS38YE0_OptSzgQzlQ5Eb7DsFDch9hw&usqp=CAU"
 ]
 
 def _find_next_id():

@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Calculator Assignment Updated">
-      <change afterPath="$PROJECT_DIR$/API/athletesapi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/athlete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/imagemanipulation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/numbers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/photoedit.html" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Tanay Athlete API">
+      <change afterPath="$PROJECT_DIR$/templates/searchbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/TanayAPI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/athletesapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/athletesapi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter.py" beforeDir="false" afterPath="$PROJECT_DIR$/starter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sprint.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wireframes.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -291,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634584652477</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Tanay Athlete API">
+      <created>1635794016209</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1635794016209</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +328,7 @@
     <MESSAGE value="Sports Columns with Images" />
     <MESSAGE value="Navbar Fixed" />
     <MESSAGE value="Sports History Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sports History Page" />
+    <MESSAGE value="Tanay Athlete API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tanay Athlete API" />
   </component>
 </project>
