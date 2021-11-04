@@ -81,6 +81,15 @@ Link to video for Sprint Week 7-8: https://www.youtube.com/watch?v=5jpiaikazMo
 | [Link](https://youtu.be/JZY-ED7d_mg) |[Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71487685) | Pranav Parthasarathy | 5.53/6 | [Gray Scale](https://github.com/Aryanboxout/flask_portfolio/commit/bbc9931fa5103378b3745c0989ddb1159b89bbed) |
 | [Link](https://www.youtube.com/watch?v=Sae-dJq0nx8) | [Card](https://github.com/Aryanboxout/flask_portfolio/projects/1#card-71497499) | Lucas Huang | 5.35/6 | 
 
+# Draft Night at the Museum 1
+| Tangibles | Assigned To: | Link to Comment
+|:-----|:--------------------| :--------------------|
+| [Filter/Search Bar](https://github.com/Aryanboxout/flask_portfolio/commit/22ad65474b88a55a6a44e9555393484884ee685f) and [Calculator](https://github.com/Aryanboxout/flask_portfolio/commit/8689d4870853ab33b6389d82abfdc2333539b225) | Tanay Rayavarapu | 
+| [Web API](https://github.com/Aryanboxout/flask_portfolio/commit/fef0e56071df21330039b8e14d5dab9b6bb80f23) | Aryan Shah | 
+| []() | Pranav Parthasarathy | 
+|  | Noah Jeng | 
+| | Lucas Huang | 
+
 
 ## Contributors
 | Name | GitHub ID and Profile | Tasks | Scrum Board | Commits |
