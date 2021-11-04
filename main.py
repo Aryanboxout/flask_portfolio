@@ -1,6 +1,7 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
 from API.teamsapi import api_bp
+from API.athletesapi import api_bp
 
 import requests
 import json
@@ -222,6 +223,15 @@ def team():
 
     response = requests.request("GET", url)
     return render_template("team.html", team=response.json())
+
+@app.route('/athlete/', methods=['GET', 'POST'])
+def athlete():
+    url = "http://127.0.0.1:5000/api/athlete"
+
+    response = requests.request("GET", url)
+    return render_template("athlete.html", athlete=response.json())
+
+
 
 if __name__ == "__main__":
     app.run(

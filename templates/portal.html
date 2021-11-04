@@ -4,6 +4,11 @@
 <meta charset=="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale= 1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+    body {
+        background: linear-gradient(to left, #33ccff, #ff99cc);
+    }
+</style>
 
 
 
@@ -14,24 +19,56 @@
 
     <div>
 
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required >
+        <style>
+            input[id=name]{
+                width:60%;
+                border:2px solid #aaa;
+                border-radius:4px;
+                margin:8px 0;
+                outline:none;
+                padding:8px;
+                box-sizing:border-box;
+                transition:.3s;
+            }
+        </style>
+        <input id="name" name="name" placeholder="your name" type="text" required >
 
     </div>
+    <style>
+        input[id=password]{
+            width:60%;
+            border:2px solid #aaa;
+            border-radius:4px;
+            margin:8px 0;
+            outline:none;
+            padding:8px;
+            box-sizing:border-box;
+            transition:.3s;
+        }
+    </style>
     <div>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password">
-    </div>
 
+        <input id="password" placeholder="password" name="password" type="password">
+    </div>
+    <style>
+        button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 4px solid orangeRed;
+            background: linear-gradient( orangeRed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+
+            color: #fff; /*For IE*/
+        }
+    </style>
     <button type="submit">Submit</button>
 
 
 </form>
 <style>
-    body {
-        background: linear-gradient(to left, #33ccff, #ff99cc);
-    }
-
 
     {
         font-family: Arial, Helvetica, sans-serif;
@@ -53,10 +90,10 @@
         padding-bottom: 12px;
         text-align: left;
         background-color: #FF66FF;
-        color:black;
+        color: white;
     }
 </style>
-<h1>CryptoCurrency Altcoin API</h1>
+<h1>NBA ALTCOIN API DATA</h1>
 
 <table id="customers">
     <tr>
@@ -64,8 +101,8 @@
         <th>Value</th>
 
     </tr>
-        <td>Total Exchanges available:</td>
-        <td>{{ data["data"]["totalexchanges"] }}</td>
+    <td>Total Exchanges available:</td>
+    <td>{{ data["data"]["totalexchanges"] }}</td>
 
     </tr>
     <tr>
@@ -95,7 +132,7 @@
     const password = document.getElementById('password')
     const form = document.getElementById('form')
     const errorElement = document.getElementById('error')
-let a=true;
+    let a=true;
     form.addEventListener('submit', (e) => {
         let messages = []
         if (name.value === '' || name.value == null) {
@@ -120,7 +157,7 @@ let a=true;
         }
 
         if (password.value === '123456789') {
-           var isStrong=false;
+            var isStrong=false;
         }
         if (password.value === '98754321') {
             var isStrong=false;
@@ -137,17 +174,17 @@ let a=true;
         if (password.value === '') {
             var isStrong=false;
         }
-if( isStrong == false){
-    alert('This is a weak password')
+        if( isStrong == false){
+            alert('This is a weak password')
         }
         if (messages.length > 0) {
             e.preventDefault()
             errorElement.innerText = messages.join(', ')
 
         }
-if (8<=password.value.length <= 22){
-messages.push('congrats that is a strong password')
-}
+        if (8<=password.value.length <= 22){
+            messages.push('congrats that is a strong password')
+        }
 
 
 
@@ -156,10 +193,101 @@ messages.push('congrats that is a strong password')
 </script>
 
 
+<style>
+    a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
 
+    a:hover, a:active {
+        background-color: red;
+    }
+</style>
 
+<a href="https://bravenewcoin.com/" target="_blank">Brave New Coin Site</a>
 
-
+<img src="data:image/jpeg;base64,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" alt="Trulli" width="500" height="383">
 </body>
 </html>
 
+<iframe src="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSfrmhlSf2F-ULW7AJC4vZQr_kE2UaVuKcFU7c8nv4NLsME6WA/viewform?usp%3Dsf_link&sa=D&source=hangouts&ust=1636125323208000&usg=AOvVaw1aW5XdMdB_-eqHgKljncJm" width="100%" height="300" style="border:1px solid black;">
+</iframe>
+
+
+
+
+<style>
+    html, body {
+        width: 50%;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    #inputField {
+        width: 300px;
+        height: 46px;
+        border-width: 0;
+        border: 1px solid black;
+        outline: none;
+        font-size: 25px;
+        vertical-align: middle;
+    }
+
+    #addToDo {
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+        vertical-align: middle;
+        font-size: 30px;
+    }
+
+    .paragraph-styling {
+        margin: 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .to-dos {
+        margin-top: 25px;
+    }
+</style>
+</head>
+<body>
+<h1>Add your favorite teams</h1>
+<div class="container">
+    <input id="inputField" type="text"><button id="addToDo">+</button>
+    <div class="to-dos" id="toDoContainer">
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+<script>
+    let addToDoButton = document.getElementById('addToDo');
+    let toDoContainer = document.getElementById('toDoContainer');
+    let inputField = document.getElementById('inputField');
+
+    addToDoButton.addEventListener('click', function(){
+        var paragraph = document.createElement('p');
+        paragraph.classList.add('paragraph-styling');
+        paragraph.innerText = inputField.value;
+        toDoContainer.appendChild(paragraph);
+        inputField.value = "";
+        paragraph.addEventListener('click', function(){
+            paragraph.style.textDecoration = "line-through";
+        })
+        paragraph.addEventListener('dblclick', function(){
+            toDoContainer.removeChild(paragraph);
+        })
+    })
+</script>
