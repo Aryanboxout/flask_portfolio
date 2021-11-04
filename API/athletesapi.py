@@ -10,7 +10,7 @@ api_bp = Blueprint('api', __name__,
 
 athletes = []
 athlete_list = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOd7U1jo8apLY93dd2x1F78yfaxMo2ESvQQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/ima ges?q=tbn:ANd9GcRKOd7U1jo8apLY93dd2x1F78yfaxMo2ESvQQ&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyshgQryjxi1koI4wUR4Q4ztktW0-i3cRAAQ&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmIciWWxwtSO8e0dfKPL3V1jEitpvkko0Q8g&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEH6rxjLnL7BpD6EZsidIGO_uu74N60_fimg&usqp=CAU",

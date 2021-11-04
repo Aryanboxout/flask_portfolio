@@ -1,6 +1,7 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
 from API.teamsapi import api_bp
+
 import requests
 import json
 # create a Flask instance
@@ -17,9 +18,9 @@ app.register_blueprint(api_bp)
 def index():
     return render_template("index.html")
 
-@app.route('/Historypage')
-def Historypage():
-    return render_template("Historypage.html")
+@app.route('/historypage')
+def historypage():
+    return render_template("historypage.html")
 
 @app.route('/minilabs/')
 def minilabs():
@@ -115,6 +116,31 @@ def joke():
 @app.route('/calculator/')
 def calculator():
     return render_template("calculator.html")
+
+@app.route('/rockpaperscissors/')
+def rockpaperscissors():
+    return render_template("rockpaperscissors.html")
+
+@app.route('/tipcalculator/')
+def tipcalculator():
+    return render_template("tipcalculator.html")
+
+@app.route('/RandomTeamGenerator/')
+def RandomTeamGenerator():
+    return render_template("RandomTeamGenerator.html")
+
+@app.route('/googleform/')
+def googleform():
+    return render_template("googleform.html")
+
+@app.route('/photoedit/')
+def photoedit():
+    return render_template("photoedit.html")
+
+@app.route('/imagemanipulation/')
+def imagemanipulation():
+    return render_template("imagemanipulation.html")
+
 @app.route('/NBAPI/')
 def NBAPI():
     return render_template("NBAPI.html")
