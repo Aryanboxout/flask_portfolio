@@ -1,15 +1,15 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
+from API.teamsapi import api_bp
 import requests
-from API.athletesapi import api_bp
 import json
-
 # create a Flask instance
 from image import image_data
 
+
 app = Flask(__name__)
 app.register_blueprint(api_bp)
-#extends athletes.api file and imports json data
+
 
 
 # connects default URL to render index.html
@@ -17,17 +17,9 @@ app.register_blueprint(api_bp)
 def index():
     return render_template("index.html")
 
-@app.route('/historypage/')
-def historypage():
-    img_list = [
-        {'source': "Peter Carolin", 'label': "Messi Pic", 'file': "messi.png"}
-    ]
-    return render_template("historypage.html", images=image_data("static/assets/", img_list))
-
-@app.route('/googleform')
-def googleform():
-    return render_template("googleform.html")
-
+@app.route('/Historypage')
+def Historypage():
+    return render_template("Historypage.html")
 
 @app.route('/minilabs/')
 def minilabs():
@@ -35,7 +27,6 @@ def minilabs():
 
 @app.route('/rgbNoah/')
 def rgbNoah():
-    print('PATH')
     return render_template("rgbNoah.html", images=image_data())
 
 @app.route('/wireframes/')
@@ -117,26 +108,33 @@ def sportsdata():
 def movie():
     return render_template("movie.html")
 
+@app.route('/joke/')
+def joke():
+    return render_template("joke.html")
+
 @app.route('/calculator/')
 def calculator():
     return render_template("calculator.html")
+@app.route('/NBAPI/')
+def NBAPI():
+    return render_template("NBAPI.html")
+import requests
 
-@app.route('/tipcalculator/')
-def tipcalculator():
-    return render_template("tipcalculator.html")
 
 
-@app.route('/rockpaperscissors/')
-def rockpaperscissors():
-    return render_template("rockpaperscissors.html")
 
-@app.route('/photoedit/')
-def photoedit():
-    return render_template("photoedit.html")
+@app.route('/portal/')
+def portal():
+    url = "https://coinranking1.p.rapidapi.com/stats"
 
-@app.route('/imagemanipulation/')
-def imagemanipulation():
-    return render_template("imagemanipulation.html")
+    headers = {
+        'x-rapidapi-host': "coinranking1.p.rapidapi.com",
+        'x-rapidapi-key': "a53d1a4acemsh90db192dc27d5f7p1028a2jsn2e483944f85c"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+    output=json.loads(response.text)
+    return render_template("portal.html",data=output)
 
 @app.route('/searchbar/')
 def searchbar():
@@ -192,21 +190,16 @@ def greetPranav():
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
 
-@app.route('/homepage/')
-def homepage():
-    return render_template("homepage.html")
-
-@app.route('/athlete/', methods=['GET', 'POST'])
-def athlete():
-    #url = "http://localhost:5000/api/athlete"
-    url = "http://127.0.0.1:5000/api/athlete"
+@app.route('/team/', methods=['GET', 'POST'])
+def team():
+    url = "http://127.0.0.1:5000/api/team"
 
     response = requests.request("GET", url)
-    return render_template("athlete.html", athlete=response.json())
+    return render_template("team.html", team=response.json())
 
 if __name__ == "__main__":
     app.run(
-            debug=True,
-            host="127.0.0.1",
-            port=5000
+        debug=True,
+        host="127.0.0.1",
+        port=5000
     ),
