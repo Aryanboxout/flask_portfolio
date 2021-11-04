@@ -136,6 +136,10 @@ def portal():
     output=json.loads(response.text)
     return render_template("portal.html",data=output)
 
+@app.route('/searchbar/')
+def searchbar():
+    return render_template("searchbar.html")
+
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
     # submit button has been pushed

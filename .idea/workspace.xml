@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Week 9 individual technichal updates">
-      <change afterPath="$PROJECT_DIR$/API/teamsapi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/NBAPI.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/team.html" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Creation of Search Bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portal.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/searchbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +34,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/stub.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/greetLucas.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/layouts/base.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/binary.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/Binarycolor.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/greetNoah.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/static/vanta.net.min.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/greetLucas.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/stub.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/rgbNoah.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/Binarycolor.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/binary.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/layouts/greet.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/layouts/base.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xxrNqqxeUePByAyuzheBC6y9Du" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -70,10 +65,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -94,7 +89,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\HP\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -137,20 +132,6 @@
       <workItem from="1633122590014" duration="432000" />
       <workItem from="1634017935927" duration="376000" />
       <workItem from="1634759450625" duration="186000" />
-      <workItem from="1635795494539" duration="1813000" />
-      <workItem from="1635797350614" duration="469000" />
-      <workItem from="1635876011850" duration="969000" />
-      <workItem from="1635884325790" duration="1715000" />
-      <workItem from="1635886202386" duration="1458000" />
-      <workItem from="1635888076401" duration="67000" />
-      <workItem from="1635894148277" duration="2915000" />
-      <workItem from="1635915184740" duration="948000" />
-      <workItem from="1635917035814" duration="1732000" />
-      <workItem from="1635918882227" duration="1120000" />
-      <workItem from="1635956008984" duration="580000" />
-      <workItem from="1635966911140" duration="1919000" />
-      <workItem from="1635968869460" duration="1347000" />
-      <workItem from="1636002173015" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1631307665962</created>
@@ -299,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634584652477</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Tanay Athlete API">
+      <created>1635794016209</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1635794016209</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Creation of Search Bar">
+      <created>1635968332897</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1635968332897</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,9 +334,8 @@
     <MESSAGE value="Sports Columns with Images" />
     <MESSAGE value="Navbar Fixed" />
     <MESSAGE value="Sports History Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sports History Page" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1635969471142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <MESSAGE value="Tanay Athlete API" />
+    <MESSAGE value="Creation of Search Bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of Search Bar" />
   </component>
 </project>
