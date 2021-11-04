@@ -1,12 +1,15 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
+from API.teamsapi import api_bp
 import requests
-
+import json
 # create a Flask instance
 from image import image_data
 
 
 app = Flask(__name__)
+app.register_blueprint(api_bp)
+
 
 
 # connects default URL to render index.html
@@ -112,6 +115,26 @@ def joke():
 @app.route('/calculator/')
 def calculator():
     return render_template("calculator.html")
+@app.route('/NBAPI/')
+def NBAPI():
+    return render_template("NBAPI.html")
+import requests
+
+
+
+
+@app.route('/portal/')
+def portal():
+    url = "https://coinranking1.p.rapidapi.com/stats"
+
+    headers = {
+        'x-rapidapi-host': "coinranking1.p.rapidapi.com",
+        'x-rapidapi-key': "a53d1a4acemsh90db192dc27d5f7p1028a2jsn2e483944f85c"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+    output=json.loads(response.text)
+    return render_template("portal.html",data=output)
 
 @app.route('/greetNoah', methods=['GET', 'POST'])
 def greetNoah():
@@ -163,30 +186,16 @@ def greetPranav():
     # starting and empty input default
     return render_template("greetPranav.html", name="World")
 
+@app.route('/team/', methods=['GET', 'POST'])
+def team():
+    url = "http://127.0.0.1:5000/api/team"
+
+    response = requests.request("GET", url)
+    return render_template("team.html", team=response.json())
+
 if __name__ == "__main__":
-    app.run(debug=True)
-
-@app.route('/joke', methods=['GET', 'POST'])
-def joke():
-    """
-    # use this url to test on and make modification on you own machine
-    url = "http://127.0.0.1:5222/api/joke"
-    """
-    url = "https://csp.nighthawkcodingsociety.com/api/joke"
-    response = request("GET", url)
-    return render_template("template/joke.html", joke=response.json())
-
-
-
-url = "https://movies-tvshows-data-imdb.p.rapidapi.com/"
-
-querystring = {"type":"get-movies-by-title","title":"matrix"}
-
-headers = {
-    'x-rapidapi-host': "movies-tvshows-data-imdb.p.rapidapi.com",
-    'x-rapidapi-key': "93746869c3msh83c9cc7d1d2ed0ap1ee0aajsnac6643923a7b"
-}
-
-response = requests.request("GET", url, headers=headers, params=querystring)
-
-print(response.text)
+    app.run(
+        debug=True,
+        host="127.0.0.1",
+        port=5000
+    ),

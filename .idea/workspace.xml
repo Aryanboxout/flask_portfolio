@@ -4,41 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Sports History Page">
-      <change afterPath="$PROJECT_DIR$/API/TanayAPI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_init_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/kc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/SportsImages/kickball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/calculator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/movie.html" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Week 9 individual technichal updates">
+      <change afterPath="$PROJECT_DIR$/API/teamsapi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/NBAPI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/Webapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/Webapi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Historypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Historypage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/KobeTribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/KobeTribute.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/baseball.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/baseball.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/basketball.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/basketball.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/binary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/brainWrite.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/covid19.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/covid19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/football.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/football.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/greetAryan.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetAryan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/greetLucas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetLucas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/greetNoah.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetNoah.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/greetPranav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetPranav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/greetTanay.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetTanay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/joke.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/joke.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/covid19.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/joke.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/jokes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/soccer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soccer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sportsdata.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sportsdata.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sportsinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sportsinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/portal.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,18 +39,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/stub.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/greetLucas.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/layouts/base.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/binary.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/Binarycolor.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/greetNoah.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/main.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/static/vanta.net.min.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/greetLucas.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/stub.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/rgbNoah.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/Binarycolor.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/binary.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/layouts/greet.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/layouts/base.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xxrNqqxeUePByAyuzheBC6y9Du" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -97,6 +70,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -120,7 +94,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+      <option name="SDK_HOME" value="C:\Users\HP\AppData\Local\Programs\Python\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -163,6 +137,20 @@
       <workItem from="1633122590014" duration="432000" />
       <workItem from="1634017935927" duration="376000" />
       <workItem from="1634759450625" duration="186000" />
+      <workItem from="1635795494539" duration="1813000" />
+      <workItem from="1635797350614" duration="469000" />
+      <workItem from="1635876011850" duration="969000" />
+      <workItem from="1635884325790" duration="1715000" />
+      <workItem from="1635886202386" duration="1458000" />
+      <workItem from="1635888076401" duration="67000" />
+      <workItem from="1635894148277" duration="2915000" />
+      <workItem from="1635915184740" duration="948000" />
+      <workItem from="1635917035814" duration="1732000" />
+      <workItem from="1635918882227" duration="1120000" />
+      <workItem from="1635956008984" duration="580000" />
+      <workItem from="1635966911140" duration="1919000" />
+      <workItem from="1635968869460" duration="1347000" />
+      <workItem from="1636002173015" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1631307665962</created>
@@ -352,5 +340,8 @@
     <MESSAGE value="Navbar Fixed" />
     <MESSAGE value="Sports History Page" />
     <option name="LAST_COMMIT_MESSAGE" value="Sports History Page" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1635969471142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
