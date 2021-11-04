@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Creation of Search Bar">
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Search Bar Version 1">
+      <change afterPath="$PROJECT_DIR$/static/assets/searchicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/searchbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,11 +75,11 @@
       <recent name="C:\Users\nacje\IdeaProjects\flask_portfolio\static\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/assets" />
+      <recent name="$PROJECT_DIR$/API" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/tanayprojects" />
       <recent name="$PROJECT_DIR$/templates/Tanay Projects" />
-      <recent name="$PROJECT_DIR$/static/assets/SportsImages" />
-      <recent name="$PROJECT_DIR$/static/assets/Sports Images" />
     </key>
   </component>
   <component name="RunManager">
@@ -294,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635968332897</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Search Bar Version 1">
+      <created>1636003413523</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1636003413523</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +343,7 @@
     <MESSAGE value="Sports History Page" />
     <MESSAGE value="Tanay Athlete API" />
     <MESSAGE value="Creation of Search Bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of Search Bar" />
+    <MESSAGE value="Search Bar Version 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search Bar Version 1" />
   </component>
 </project>
