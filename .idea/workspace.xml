@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Creation of Search Bar">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_17_2021_2_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_17_2021_2_15_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="Calculator Assignment Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/athletesapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/athletesapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomteams.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/randomteams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RandomTeamGenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RandomTeamGenerator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/googleform.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/googleform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portal.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/searchbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sportsdata.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sportsdata.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -41,17 +33,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/templates/stub.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/static/vanta.net.min.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/layouts/greet.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/greetLucas.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/greetNoah.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/Binarycolor.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/layouts/base.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/greetNoah.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/stub.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/rgbNoah.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/binary.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/layouts/greet.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/templates/rgbNoah.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/Binarycolor.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xxrNqqxeUePByAyuzheBC6y9Du" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -82,11 +74,11 @@
       <recent name="C:\Users\nacje\IdeaProjects\flask_portfolio\static\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/assets" />
-      <recent name="$PROJECT_DIR$/API" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/tanayprojects" />
       <recent name="$PROJECT_DIR$/templates/Tanay Projects" />
+      <recent name="$PROJECT_DIR$/static/assets/SportsImages" />
+      <recent name="$PROJECT_DIR$/static/assets/Sports Images" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,7 +88,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\nacje\IdeaProjects\flask_portfolio\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -139,7 +131,8 @@
       <workItem from="1633122590014" duration="432000" />
       <workItem from="1634017935927" duration="376000" />
       <workItem from="1634759450625" duration="186000" />
-      <workItem from="1636040350808" duration="4281000" />
+      <workItem from="1636004679217" duration="441000" />
+      <workItem from="1636052795965" duration="142000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1631307665962</created>
@@ -288,28 +281,7 @@
       <option name="project" value="LOCAL" />
       <updated>1634584652477</updated>
     </task>
-    <task id="LOCAL-00022" summary="Tanay Athlete API">
-      <created>1635794016209</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1635794016209</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Creation of Search Bar">
-      <created>1635968332897</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1635968332897</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Search Bar Version 1">
-      <created>1636003413523</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1636003413523</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,13 +321,14 @@
     <MESSAGE value="Sports Columns with Images" />
     <MESSAGE value="Navbar Fixed" />
     <MESSAGE value="Sports History Page" />
-    <MESSAGE value="Tanay Athlete API" />
-    <MESSAGE value="Creation of Search Bar" />
-    <MESSAGE value="Search Bar Version 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search Bar Version 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sports History Page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="main Coverage Results" MODIFIED="1635967185673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1636047180220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1632077186266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/g$g.coverage" NAME="g Coverage Results" MODIFIED="1631308565404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio2$main.coverage" NAME="main Coverage Results" MODIFIED="1636052840961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/g$main.coverage" NAME="main Coverage Results" MODIFIED="1632166966334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631719201937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio2$flask_portfolio2.coverage" NAME="flask_portfolio2 Coverage Results" MODIFIED="1631307451060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
