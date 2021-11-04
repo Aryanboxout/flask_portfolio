@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{%  block body %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,7 +44,25 @@
     <li><a href="#">Washington Wizards</a></li>
 </ul>
 
-
+<script>
+    function myFilter () {
+        var = input, filter, ul, li, a, i, textValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('myUl');
+        li = ul.document.getElementById('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            textValue = a.textContent || a.innerText;
+            if (textValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
+{% endblock %}
