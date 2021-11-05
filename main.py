@@ -19,7 +19,7 @@ app.register_blueprint(api_bp)
 def index():
     return render_template("index.html")
 
-@app.route('/historypage')
+@app.route('/historypage/')
 def historypage():
     return render_template("historypage.html")
 

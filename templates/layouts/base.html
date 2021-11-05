@@ -7,11 +7,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <!DOCTYPE HTML>
 <html lang="en">
 
-{% set basename = "N224-Cosmos Project" %}
-{% set image= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLE2bHKq09FUZ2ppo6O-sugSJkM_mUzHFegw&usqp=CAU" %}
-{% set github = "https://github.com/nighthawkcoders" %}
-{% set twitter = "https://twitter.com/NighthawkCoding" %}
-{% set youtube = "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber" %}
+{% set basename = "Cosmos Sports Center" %}
 
 <head>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -24,6 +20,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/assets/SoccerBall.jpeg">
     <style>
         :root{
             --blue: blue;
@@ -38,8 +35,8 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             -moz-animation: fadein 2s; /* Firefox */
             -webkit-animation: fadein 2s; /* Safari and Chrome */
             -o-animation: fadein 2s; /* Opera */
-            color: var(--black);
-            background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url("/static/assets/spaceart.jpeg");
+            color: var(--white);
+            background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url("/static/assets/spacebackground2.jpg");
         }
 
         .dark-mode {
@@ -124,7 +121,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         <div class="col-2" style="text-align: right;">
             {% block info %}
             <!-- notice jinja style variables used in href's -->
-            <a><h5>{{basename}}</h5></a>
+                <a><h5><center>Explore our page to learn more about sports!</center></h5></a>
 
             {% endblock %}
         </div>
@@ -134,7 +131,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
 
             <div class="col-9" >
-                <h1>{{ project }} Team Cosmos </h1>
+                <h1>{{ project }} Cosmos Sports Center </h1>
             </div>
 
         </div>
