@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{%  block body %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +35,7 @@
     body {
           padding: 0;
           margin: 0;
-          background: linear-gradient(to left, #33ccff, #ff99cc);
+          background: none;
         }
 
     img { transition: filter 1s linear; }
@@ -47,3 +50,4 @@
 
 </body>
 </html>
+{% endblock %}

@@ -34,6 +34,25 @@
             document.getElementById("btn2").value = "Blur";
         }
     }
+
+    document.addEventListener('DOMContentLoaded',function(){
+        document.getElementById("img1-rotate").onclick = function(){
+            var currentRotate = document.getElementById("lassen-volcano-256.jpg").style.transform;
+            if(currentRotate == "rotate(180deg)"){
+                document.getElementById("lassen-volcano-256.jpg").style.transform = "rotate(360deg)";
+            }
+            else {
+                document.getElementById("lassen-volcano-256.jpg").style.transform = "rotate(180deg)";
+            }
+        }
+    })
+
+    const img = document.querySelector('img');
+    img.addEventListener('click', toggleBlur);
+
+    function toggleBlur() {
+        this.classList.toggle('blur');
+    }
     </script>
 
 <title>RGB starter</title>
@@ -77,6 +96,12 @@
                     <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                     <p hidden id="img_blur{{loop.index}}">{{image.base64_BLUR}}</p>
                     <input type="button" id="btn2" value="Blur" onclick="setImg2()">
+
+                    <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
+                    <p hidden id="img_blur{{loop.index}}">{{image.base64_ROTATE}}</p>
+                    <input id="img1-rotate" type="submit" value="Rotate">
+
+
 
                 </td>
                 <td>

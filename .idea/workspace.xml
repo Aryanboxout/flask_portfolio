@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="358b21a0-b6a0-4e92-99b7-2c61d1578e38" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/LogicGate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LogicGate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/googleform.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/googleform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/greetPranav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetPranav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/greetTanay.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greetTanay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/historypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/historypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/portal.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rgbNoah.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rgbNoah.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rockpaperscissors.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rockpaperscissors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sportsdata.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sportsdata.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tipcalculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tipcalculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +145,7 @@
       <workItem from="1634759450625" duration="186000" />
       <workItem from="1636004679217" duration="441000" />
       <workItem from="1636052795965" duration="142000" />
-      <workItem from="1636130823930" duration="2312000" />
+      <workItem from="1636130823930" duration="6847000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1631307665962</created>
@@ -296,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636097078411</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="noah version no one touch">
+      <created>1636146767744</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1636146767744</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,14 +357,15 @@
     <MESSAGE value="Sports History Page" />
     <MESSAGE value="N@TM Rough Draft" />
     <MESSAGE value="its 12:24 plz work" />
-    <option name="LAST_COMMIT_MESSAGE" value="its 12:24 plz work" />
+    <MESSAGE value="noah version no one touch" />
+    <option name="LAST_COMMIT_MESSAGE" value="noah version no one touch" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="main Coverage Results" MODIFIED="1635967185673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/flask_portfolio2$flask_portfolio2.coverage" NAME="flask_portfolio2 Coverage Results" MODIFIED="1631307451060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flask_portfolio2$main.coverage" NAME="main Coverage Results" MODIFIED="1636052840961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/g$g.coverage" NAME="g Coverage Results" MODIFIED="1631308565404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1636142777785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1636425471125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/g$main.coverage" NAME="main Coverage Results" MODIFIED="1632166966334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
